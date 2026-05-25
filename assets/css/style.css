@@ -149,6 +149,14 @@ li { margin-bottom: 7px; }
 .member-info li {
   margin-bottom: 4px;
 }
+.research-figure {
+  display: block;
+  width: 100%;
+  max-width: 860px;
+  margin: 22px auto 28px;
+  border: 1px solid var(--border);
+  background: #fff;
+}
 .pub-list { padding-left: 22px; }
 .pub-list li { margin-bottom: 13px; }
 
