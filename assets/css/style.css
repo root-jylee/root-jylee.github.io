@@ -105,6 +105,43 @@ li { margin-bottom: 7px; }
   height: auto;
   border: 1px solid var(--border);
 }
+.member-entry {
+  display: flex;
+  gap: 28px;
+  align-items: flex-start;
+  margin: 24px 0 34px;
+}
+.member-photo {
+  width: 170px;
+  height: 230px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 2px 9px rgba(0,0,0,0.22);
+  flex-shrink: 0;
+}
+.member-info h3 {
+  margin-top: 0;
+  margin-bottom: 6px;
+  font-size: 22px;
+}
+.member-role {
+  margin-bottom: 2px;
+  color: var(--muted);
+  font-style: italic;
+}
+.member-email {
+  margin-bottom: 18px;
+  font-style: italic;
+}
+.member-info h4 {
+  margin: 18px 0 6px;
+  font-size: 16px;
+  font-weight: bold;
+}
+.member-info ul {
+  margin-top: 4px;
+  margin-bottom: 12px;
+}
 .pub-list { padding-left: 22px; }
 .pub-list li { margin-bottom: 13px; }
 
@@ -122,4 +159,6 @@ li { margin-bottom: 7px; }
   .nav a { margin-right: 12px; margin-bottom: 6px; }
   .profile { display: block; }
   .profile img { max-width: 220px; width: 100%; margin-bottom: 14px; }
+  .member-entry { display: block; }
+  .member-photo { width: 180px; height: 230px; margin-bottom: 16px; }
 }
