@@ -106,9 +106,10 @@ li { margin-bottom: 7px; }
   border: 1px solid var(--border);
 }
 .member-entry {
-  display: flex;
-  gap: 28px;
-  align-items: flex-start;
+  display: grid;
+  grid-template-columns: 170px minmax(0, 1fr);
+  column-gap: 28px;
+  align-items: start;
   margin: 24px 0 34px;
 }
 .member-photo {
@@ -117,12 +118,15 @@ li { margin-bottom: 7px; }
   object-fit: cover;
   border-radius: 8px;
   box-shadow: 0 2px 9px rgba(0,0,0,0.22);
-  flex-shrink: 0;
+}
+.member-info {
+  min-width: 0;
 }
 .member-info h3 {
   margin-top: 0;
   margin-bottom: 6px;
   font-size: 22px;
+  line-height: 1.25;
 }
 .member-role {
   margin-bottom: 2px;
@@ -130,17 +134,20 @@ li { margin-bottom: 7px; }
   font-style: italic;
 }
 .member-email {
-  margin-bottom: 18px;
+  margin-bottom: 12px;
   font-style: italic;
 }
 .member-info h4 {
-  margin: 18px 0 6px;
+  margin: 16px 0 6px;
   font-size: 16px;
   font-weight: bold;
 }
 .member-info ul {
   margin-top: 4px;
   margin-bottom: 12px;
+}
+.member-info li {
+  margin-bottom: 4px;
 }
 .pub-list { padding-left: 22px; }
 .pub-list li { margin-bottom: 13px; }
