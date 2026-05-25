@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="520" viewBox="0 0 920 520" role="img" aria-labelledby="title desc">
+  <title id="title">Representative ROOT Lab research systems</title>
+  <desc id="desc">Four representative application systems: terrestrial base-station communication, UAV and maritime autonomous platforms, LEO satellite authentication, and communication-efficient distributed AI.</desc>
+  <style>
+    .panel { fill: #ffffff; stroke: #d6d6d6; stroke-width: 1.2; rx: 8; }
+    .title { font-family: Georgia, 'Times New Roman', serif; font-size: 16px; font-weight: bold; fill: #111111; }
+    .label { font-family: Georgia, 'Times New Roman', serif; font-size: 13px; fill: #111111; }
+    .small { font-family: Georgia, 'Times New Roman', serif; font-size: 12px; fill: #555555; }
+    .node { fill: #f7f7f7; stroke: #1f3a5f; stroke-width: 1.3; }
+    .adversary { fill: #fff3f3; stroke: #8b1e1e; stroke-width: 1.3; }
+    .trust { fill: #edf7ff; stroke: #1f3a5f; stroke-width: 1.2; }
+    .link { stroke: #1f3a5f; stroke-width: 1.4; fill: none; marker-end: url(#arrow); }
+    .badlink { stroke: #8b1e1e; stroke-width: 1.3; stroke-dasharray: 5 4; fill: none; marker-end: url(#redarrow); }
+  </style>
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0, 8 3, 0 6" fill="#1f3a5f" /></marker>
+    <marker id="redarrow" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0, 8 3, 0 6" fill="#8b1e1e" /></marker>
+  </defs>
+
+  <text x="460" y="30" text-anchor="middle" class="title">Representative Application Systems</text>
+
+  <rect x="35" y="55" width="405" height="200" class="panel" />
+  <text x="237" y="83" text-anchor="middle" class="title">Terrestrial BS / Cellular Communication</text>
+  <circle cx="110" cy="185" r="16" class="node"/><text x="110" y="215" text-anchor="middle" class="small">Users</text>
+  <circle cx="155" cy="175" r="14" class="node"/><circle cx="190" cy="185" r="13" class="node"/>
+  <rect x="278" y="118" width="30" height="85" class="trust"/><line x1="293" y1="118" x2="293" y2="80" stroke="#1f3a5f"/><text x="293" y="218" text-anchor="middle" class="small">BS</text>
+  <circle cx="375" cy="155" r="17" class="adversary"/><text x="375" y="186" text-anchor="middle" class="small">Willie/Eve</text>
+  <path d="M130 180 C190 135,240 125,278 145" class="link"/>
+  <path d="M155 170 C230 195,260 195,278 180" class="link"/>
+  <path d="M293 125 C330 105,355 115,370 140" class="badlink"/>
+  <text x="236" y="240" text-anchor="middle" class="small">Secure NOMA · multi-user covert communication · base-station links</text>
+
+  <rect x="480" y="55" width="405" height="200" class="panel" />
+  <text x="682" y="83" text-anchor="middle" class="title">UAV / USV Autonomous Platforms</text>
+  <rect x="540" y="170" width="36" height="20" class="trust"/><text x="558" y="205" text-anchor="middle" class="small">Verifier</text>
+  <circle cx="700" cy="130" r="18" class="node"/><line x1="670" y1="130" x2="730" y2="130" stroke="#1f3a5f"/><line x1="700" y1="100" x2="700" y2="160" stroke="#1f3a5f"/><text x="700" y="170" text-anchor="middle" class="small">Legit UAV</text>
+  <circle cx="805" cy="165" r="17" class="adversary"/><line x1="780" y1="165" x2="830" y2="165" stroke="#8b1e1e"/><line x1="805" y1="140" x2="805" y2="190" stroke="#8b1e1e"/><text x="805" y="205" text-anchor="middle" class="small">Spoofer</text>
+  <path d="M575 170 C620 120,650 112,685 125" class="link"/>
+  <path d="M575 175 C650 175,725 170,790 165" class="badlink"/>
+  <text x="682" y="240" text-anchor="middle" class="small">Spatial challenge-response · 3D channel maps · single-packet PLA</text>
+
+  <rect x="35" y="285" width="405" height="200" class="panel" />
+  <text x="237" y="313" text-anchor="middle" class="title">LEO Satellite / NTN Authentication</text>
+  <ellipse cx="235" cy="405" rx="130" ry="38" fill="none" stroke="#d6d6d6" stroke-width="1.1"/>
+  <circle cx="235" cy="405" r="36" fill="#f7f7f7" stroke="#d6d6d6"/>
+  <circle cx="165" cy="365" r="15" class="node"/><line x1="145" y1="365" x2="185" y2="365" stroke="#1f3a5f"/><text x="165" y="338" text-anchor="middle" class="small">Satellite</text>
+  <circle cx="330" cy="355" r="14" class="adversary"/><line x1="310" y1="355" x2="350" y2="355" stroke="#8b1e1e"/><text x="330" y="333" text-anchor="middle" class="small">Spoofer</text>
+  <rect x="210" y="440" width="42" height="20" class="trust"/><text x="231" y="475" text-anchor="middle" class="small">Ground verifier</text>
+  <path d="M230 440 C210 410,185 390,165 370" class="link"/>
+  <path d="M250 440 C275 400,305 380,330 360" class="badlink"/>
+  <text x="237" y="470" text-anchor="middle" class="small">Randomized temporal checks · Doppler/AoA/RTT consistency</text>
+
+  <rect x="480" y="285" width="405" height="200" class="panel" />
+  <text x="682" y="313" text-anchor="middle" class="title">Communication-Efficient Distributed AI</text>
+  <circle cx="550" cy="365" r="13" class="node"/><circle cx="550" cy="420" r="13" class="node"/><circle cx="610" cy="392" r="13" class="node"/>
+  <rect x="710" y="367" width="55" height="45" class="trust"/><text x="737" y="430" text-anchor="middle" class="small">Aggregator</text>
+  <circle cx="815" cy="390" r="16" class="adversary"/><text x="815" y="425" text-anchor="middle" class="small">Eve</text>
+  <path d="M563 365 C620 360,670 365,710 380" class="link"/>
+  <path d="M563 420 C625 423,670 410,710 400" class="link"/>
+  <path d="M623 392 C660 392,685 392,710 392" class="link"/>
+  <path d="M765 388 C785 382,798 382,810 388" class="badlink"/>
+  <text x="682" y="470" text-anchor="middle" class="small">OTA-FL · differentially private updates · membership-inference defense</text>
+</svg>
