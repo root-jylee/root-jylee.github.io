@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="920" height="520" viewBox="0 0 920 520" role="img" aria-labelledby="title desc">
   <title id="title">Representative ROOT Lab research systems</title>
-  <desc id="desc">Four representative application systems: terrestrial base-station communication, UAV and maritime autonomous platforms, LEO satellite authentication, and communication-efficient distributed AI.</desc>
+  <desc id="desc">Four representative application systems: terrestrial base-station communication, UAV and maritime autonomous platforms, LEO satellite authentication, and private wireless distributed learning.</desc>
   <style>
     .panel { fill: #ffffff; stroke: #d6d6d6; stroke-width: 1.2; rx: 8; }
     .title { font-family: Georgia, 'Times New Roman', serif; font-size: 16px; font-weight: bold; fill: #111111; }
@@ -51,7 +51,8 @@
   <text x="237" y="470" text-anchor="middle" class="small">Randomized temporal checks · Doppler/AoA/RTT consistency</text>
 
   <rect x="480" y="285" width="405" height="200" class="panel" />
-  <text x="682" y="313" text-anchor="middle" class="title">Communication-Efficient Distributed AI</text>
+  <text x="682" y="308" text-anchor="middle" class="title">Private Wireless</text>
+  <text x="682" y="330" text-anchor="middle" class="title">Distributed Learning</text>
   <circle cx="550" cy="365" r="13" class="node"/><circle cx="550" cy="420" r="13" class="node"/><circle cx="610" cy="392" r="13" class="node"/>
   <rect x="710" y="367" width="55" height="45" class="trust"/><text x="737" y="430" text-anchor="middle" class="small">Aggregator</text>
   <circle cx="815" cy="390" r="16" class="adversary"/><text x="815" y="425" text-anchor="middle" class="small">Eve</text>
