@@ -1,0 +1,125 @@
+:root {
+  --bg: #ffffff;
+  --text: #111111;
+  --muted: #555555;
+  --border: #d6d6d6;
+  --link: #0645ad;
+  --visited: #4b2e83;
+  --accent: #1f3a5f;
+  --light-bg: #f7f7f7;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.page {
+  max-width: 920px;
+  margin: 36px auto;
+  padding: 0 24px;
+}
+
+.site-header { margin-bottom: 30px; }
+.site-title {
+  margin: 0;
+  font-size: 34px;
+  line-height: 1.2;
+  font-weight: normal;
+}
+.site-subtitle {
+  margin: 6px 0 0;
+  font-size: 18px;
+  color: var(--muted);
+}
+.site-tagline {
+  margin: 8px 0 20px;
+  color: var(--muted);
+  font-style: italic;
+}
+
+.nav {
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  padding: 8px 0;
+  margin: 22px 0 34px;
+}
+.nav a {
+  display: inline-block;
+  margin-right: 18px;
+  color: var(--link);
+  text-decoration: none;
+}
+.nav a:visited { color: var(--visited); }
+.nav a:hover, .nav a.active { text-decoration: underline; }
+
+main { min-height: 55vh; }
+
+h1.page-title {
+  margin: 0 0 22px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--border);
+  font-size: 28px;
+  font-weight: normal;
+}
+h2 {
+  margin: 34px 0 12px;
+  padding-bottom: 4px;
+  border-bottom: 1px solid var(--border);
+  font-size: 22px;
+  font-weight: normal;
+}
+h3 {
+  margin: 24px 0 8px;
+  font-size: 18px;
+  font-weight: bold;
+}
+p { margin: 0 0 14px; }
+a { color: var(--link); }
+a:visited { color: var(--visited); }
+ul, ol { padding-left: 24px; }
+li { margin-bottom: 7px; }
+
+.section-note { color: var(--muted); }
+.info-box {
+  background: var(--light-bg);
+  border: 1px solid var(--border);
+  padding: 14px 16px;
+  margin: 18px 0;
+}
+.profile {
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+}
+.profile img {
+  width: 170px;
+  max-width: 35%;
+  height: auto;
+  border: 1px solid var(--border);
+}
+.pub-list { padding-left: 22px; }
+.pub-list li { margin-bottom: 13px; }
+
+.site-footer {
+  margin-top: 52px;
+  padding-top: 12px;
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+  font-size: 14px;
+}
+
+@media (max-width: 680px) {
+  .page { margin: 24px auto; padding: 0 18px; }
+  .site-title { font-size: 29px; }
+  .nav a { margin-right: 12px; margin-bottom: 6px; }
+  .profile { display: block; }
+  .profile img { max-width: 220px; width: 100%; margin-bottom: 14px; }
+}
