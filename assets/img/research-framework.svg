@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="920" height="390" viewBox="0 0 920 390" role="img" aria-labelledby="title desc">
   <title id="title">ROOT Lab research framework</title>
-  <desc id="desc">Security and privacy methods are grounded in the physical-layer communication domain and applied to terrestrial cellular networks, NTN and autonomous platforms, and communication-efficient distributed AI.</desc>
+  <desc id="desc">Security and privacy methods are grounded in the physical-layer communication domain and applied to terrestrial cellular networks, NTN and autonomous platforms, and private wireless distributed learning.</desc>
   <style>
     .box { fill: #ffffff; stroke: #1f3a5f; stroke-width: 1.4; rx: 8; }
     .light { fill: #f7f7f7; stroke: #d6d6d6; stroke-width: 1.2; rx: 8; }
@@ -48,9 +48,9 @@
   <text x="815" y="229" text-anchor="middle" class="small">UAV · USV · satellite</text>
 
   <rect x="740" y="260" width="150" height="88" class="light" />
-  <text x="815" y="292" text-anchor="middle" class="title">Distributed AI</text>
-  <text x="815" y="317" text-anchor="middle" class="small">private learning</text>
-  <text x="815" y="337" text-anchor="middle" class="small">over channels</text>
+  <text x="815" y="288" text-anchor="middle" class="title">Private Wireless</text>
+  <text x="815" y="311" text-anchor="middle" class="title">Distributed</text>
+  <text x="815" y="334" text-anchor="middle" class="title">Learning</text>
 
   <text x="460" y="372" text-anchor="middle" class="small">ROOT Lab builds physical-layer roots of trust for intelligent secure communication systems.</text>
 </svg>
