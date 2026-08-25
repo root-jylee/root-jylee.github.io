@@ -45,10 +45,10 @@
   <circle cx="235" cy="363" r="32" fill="#f7f7f7" stroke="#d6d6d6"/>
   <circle cx="165" cy="326" r="15" class="node"/><line x1="145" y1="326" x2="185" y2="326" stroke="#1f3a5f"/><text x="165" y="306" text-anchor="middle" class="small">Satellite</text>
   <circle cx="330" cy="318" r="14" class="adversary"/><line x1="310" y1="318" x2="350" y2="318" stroke="#8b1e1e"/><text x="330" y="300" text-anchor="middle" class="small">Spoofer</text>
-  <rect x="210" y="392" width="42" height="20" class="trust"/><text x="231" y="420" text-anchor="middle" class="small">Ground verifier</text>
+  <rect x="205" y="388" width="52" height="26" class="trust"/><text x="231" y="399" text-anchor="middle" class="small">Ground</text><text x="231" y="411" text-anchor="middle" class="small">verifier</text>
   <path d="M230 392 C210 370,185 345,165 331" class="link"/>
   <path d="M250 392 C275 365,305 342,330 323" class="badlink"/>
-  <text x="237" y="417" text-anchor="middle" class="small">Random temporal checks · Doppler/AoA/RTT consistency</text>
+  <text x="237" y="426" text-anchor="middle" class="small">Random temporal checks · Doppler/AoA/RTT consistency</text>
 
   <rect x="480" y="255" width="405" height="175" class="panel" />
   <text x="682" y="282" text-anchor="middle" class="title">Awareness-Driven Covert ISAC</text>
