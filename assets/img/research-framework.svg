@@ -4,9 +4,9 @@
   <style>
     .box { fill: #ffffff; stroke: #1f3a5f; stroke-width: 1.4; rx: 8; }
     .light { fill: #f7f7f7; stroke: #d6d6d6; stroke-width: 1.2; rx: 8; }
-    .title { font-family: Georgia, 'Times New Roman', serif; font-size: 17px; font-weight: bold; fill: #111111; }
-    .text { font-family: Georgia, 'Times New Roman', serif; font-size: 14px; fill: #111111; }
-    .small { font-family: Georgia, 'Times New Roman', serif; font-size: 12.5px; fill: #555555; }
+    .title { font-family: Inter, Pretendard, 'Noto Sans KR', Arial, sans-serif; font-size: 17px; font-weight: bold; fill: #111111; }
+    .text { font-family: Inter, Pretendard, 'Noto Sans KR', Arial, sans-serif; font-size: 14px; fill: #111111; }
+    .small { font-family: Inter, Pretendard, 'Noto Sans KR', Arial, sans-serif; font-size: 12.5px; fill: #555555; }
     .arrow { stroke: #1f3a5f; stroke-width: 1.5; marker-end: url(#arrowhead); }
   </style>
   <defs>
