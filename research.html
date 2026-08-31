@@ -5,20 +5,17 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="description" content="ROOT Lab research scope and detailed physical-layer security architectures">
   <title>Research — ROOT Lab</title>
-  <link rel="stylesheet" href="styles.css?v=20260901-2">
+  <link rel="stylesheet" href="styles.css?v=20260901-3">
 </head>
 <body>
 <div class="topline"></div>
 <header><div class="wrap nav"><a class="brand" href="index.html"><span class="mark">R</span><span>ROOT Lab<small>Physical-Layer Root of Trust</small></span></a><nav class="links" aria-label="Main navigation"><a href="index.html">Home</a><a class="active" href="research.html">Research</a><a href="publications.html">Publications</a><a href="members.html">Members</a><a href="projects.html">Projects</a><a href="contact.html">Contact</a></nav></div></header>
 
 <main>
-  <div class="page-hero"><div class="wrap"><h1 class="page-title">Research</h1><p>Four adversarial questions, translated into physical-layer trust architectures.</p></div></div>
+  <div class="page-hero"><div class="wrap"><h1 class="page-title">Research</h1></div></div>
 
   <section class="research-intro">
-    <div class="wrap intro-grid">
-      <div><div class="kicker">Research scope</div><h2 class="content-title">What can an adversary infer?</h2></div>
-      <div><p>ROOT Lab develops security, privacy, and trust methods around observable physical signals. Each research scope begins with a specific adversarial inference goal, uses a physical-layer resource, and ends with a measurable trust outcome.</p><p class="section-note">Choose a scope below to jump to its system architecture.</p></div>
-    </div>
+    <div class="wrap"><div class="kicker">Research scope</div><h2 class="content-title">Four questions. One physical layer.</h2></div>
     <div class="wrap scope-jump" aria-label="Research architecture navigation">
       <a href="#covert-communication"><b>01</b><span>Covert communication</span></a>
       <a href="#authentication"><b>02</b><span>Physical-layer authentication</span></a>
@@ -27,16 +24,24 @@
     </div>
   </section>
 
-  <section class="paper research-visual-section framework-section">
+  <section class="paper research-visual-section research-overview-section">
     <div class="wrap">
-      <div class="section-head compact-head"><div><div class="kicker">Shared framework</div><h2>Method → physical layer → system.</h2></div><p>The four scopes share a common path: define what must remain hidden or verifiable, exploit physical observables, then validate trust in a real communication system.</p></div>
-      <figure class="research-figure framework-figure"><img src="assets/img/research-framework.svg?v=20260825" alt="ROOT Lab research framework connecting security methods, the physical-layer communication domain, and application systems"><figcaption>Signals, channels, mobility, interference, noise, and hardware characteristics form the bridge between security methods and deployable systems.</figcaption></figure>
+      <div class="section-head"><div><div class="kicker">Research overview</div><h2>Method → Physical Layer → System</h2></div></div>
+      <figure class="research-figure framework-figure"><img src="assets/img/research-framework.svg?v=20260825" alt="ROOT Lab research framework connecting security methods, the physical-layer communication domain, and application systems"></figure>
+      <div class="overview-visual-head"><span>Application systems</span></div>
+      <figure class="research-figure systems-figure"><img src="assets/img/research-systems.svg?v=20260825" alt="Representative ROOT Lab systems including terrestrial cellular networks, UAV and maritime platforms, LEO satellites, covert ISAC, and private distributed learning"></figure>
+      <div class="overview-themes" aria-label="Representative research themes">
+        <span>Multi-User Covert Communication</span>
+        <span>Mobile Physical-Layer Authentication</span>
+        <span>Secrecy & Private Learning</span>
+        <span>Awareness-Driven Intelligent Security</span>
+      </div>
     </div>
   </section>
 
   <section class="architecture-section" id="covert-communication">
     <div class="wrap architecture">
-      <div class="architecture-copy"><span class="architecture-index">01 · Detection</span><h2>Covert Communication</h2><p>Conceal whether a transmission occurred while preserving reliable communication for the intended receiver.</p><dl><div><dt>Adversary asks</dt><dd>“Did transmission occur?”</dd></div><div><dt>Physical resources</dt><dd>Channel uncertainty, interference, spatial heterogeneity, cooperative users</dd></div><div><dt>Trust outcome</dt><dd>Low detectability at the warden and reliable decoding at Bob</dd></div></dl></div>
+      <div class="architecture-copy"><span class="architecture-index">01 · Detection</span><h2>Covert Communication</h2><dl><div><dt>Adversary question</dt><dd>Transmission occurrence</dd></div><div><dt>Physical resources</dt><dd>Channel uncertainty · Interference · Spatial heterogeneity · Cooperative users</dd></div><div><dt>Trust outcome</dt><dd>Low detectability · Reliable decoding</dd></div></dl></div>
       <div class="arch-panel">
         <div class="arch-label">System architecture</div>
         <div class="arch-flow">
@@ -48,14 +53,14 @@
           <div class="arch-arrow" aria-hidden="true">→</div>
           <div class="arch-node output"><span>04 · Output</span><b>Covert reliable link</b><small>Detection error + throughput</small></div>
         </div>
-        <div class="threat-bar"><b>Threat model</b><span>The warden performs hypothesis testing on received physical signals.</span></div>
+        <div class="threat-bar"><b>Threat model</b><span>Warden · Binary hypothesis testing · Received-signal statistics</span></div>
       </div>
     </div>
   </section>
 
   <section class="paper architecture-section" id="authentication">
     <div class="wrap architecture">
-      <div class="architecture-copy"><span class="architecture-index">02 · Identity</span><h2>Physical-Layer Authentication</h2><p>Verify who generated a signal using physical evidence that is difficult for an attacker to reproduce.</p><dl><div><dt>Adversary asks</dt><dd>“Who generated the signal?”</dd></div><div><dt>Physical resources</dt><dd>Spatial channels, hardware traits, mobility, 3D channel maps</dd></div><div><dt>Trust outcome</dt><dd>Robust identity decision from a packet or challenge–response exchange</dd></div></dl></div>
+      <div class="architecture-copy"><span class="architecture-index">02 · Identity</span><h2>Physical-Layer Authentication</h2><dl><div><dt>Adversary question</dt><dd>Signal identity</dd></div><div><dt>Physical resources</dt><dd>Spatial channels · Hardware traits · Mobility · 3D channel maps</dd></div><div><dt>Trust outcome</dt><dd>Robust identity decision · Accept / Reject</dd></div></dl></div>
       <div class="arch-panel">
         <div class="arch-label">System architecture</div>
         <div class="arch-flow">
@@ -67,14 +72,14 @@
           <div class="arch-arrow" aria-hidden="true">→</div>
           <div class="arch-node output"><span>04 · Output</span><b>Accept / reject identity</b><small>False accept + false reject</small></div>
         </div>
-        <div class="threat-bar"><b>Threat model</b><span>An impersonator replays or forges protocol-level identity while lacking matching physical evidence.</span></div>
+        <div class="threat-bar"><b>Threat model</b><span>Impersonation · Replay · Forged identity · Physical mismatch</span></div>
       </div>
     </div>
   </section>
 
   <section class="architecture-section" id="secrecy">
     <div class="wrap architecture">
-      <div class="architecture-copy"><span class="architecture-index">03 · Content</span><h2>Physical-Layer Secrecy</h2><p>Protect transmitted content by shaping the legitimate and eavesdropper channels differently.</p><dl><div><dt>Adversary asks</dt><dd>“What was transmitted?”</dd></div><div><dt>Physical resources</dt><dd>Channel advantage, beamforming, artificial noise, multi-user diversity</dd></div><div><dt>Trust outcome</dt><dd>Reliable reception for the intended user with bounded information leakage</dd></div></dl></div>
+      <div class="architecture-copy"><span class="architecture-index">03 · Content</span><h2>Physical-Layer Secrecy</h2><dl><div><dt>Adversary question</dt><dd>Transmitted content</dd></div><div><dt>Physical resources</dt><dd>Channel advantage · Beamforming · Artificial noise · Multi-user diversity</dd></div><div><dt>Trust outcome</dt><dd>Reliable reception · Bounded information leakage</dd></div></dl></div>
       <div class="arch-panel">
         <div class="arch-label">System architecture</div>
         <div class="arch-flow">
@@ -86,14 +91,14 @@
           <div class="arch-arrow" aria-hidden="true">→</div>
           <div class="arch-node output"><span>04 · Output</span><b>Confidential reliable link</b><small>Secrecy rate + outage</small></div>
         </div>
-        <div class="threat-bar"><b>Threat model</b><span>A passive eavesdropper observes the wireless transmission and attempts to recover its content.</span></div>
+        <div class="threat-bar"><b>Threat model</b><span>Passive Eve · Wireless observation · Content recovery</span></div>
       </div>
     </div>
   </section>
 
   <section class="paper architecture-section" id="differential-privacy">
     <div class="wrap architecture">
-      <div class="architecture-copy"><span class="architecture-index">04 · Privacy</span><h2>Differential Privacy</h2><p>Protect each participant’s data contribution while still enabling useful distributed learning.</p><dl><div><dt>Adversary asks</dt><dd>“Was individual data exposed?”</dd></div><div><dt>Physical resources</dt><dd>Wireless superposition, aggregation, channel noise, power control</dd></div><div><dt>Trust outcome</dt><dd>Useful global learning under an explicit privacy budget</dd></div></dl></div>
+      <div class="architecture-copy"><span class="architecture-index">04 · Privacy</span><h2>Differential Privacy</h2><dl><div><dt>Adversary question</dt><dd>Individual data exposure</dd></div><div><dt>Physical resources</dt><dd>Wireless superposition · Aggregation · Channel noise · Power control</dd></div><div><dt>Trust outcome</dt><dd>Global model utility · Privacy budget ε</dd></div></dl></div>
       <div class="arch-panel">
         <div class="arch-label">System architecture</div>
         <div class="arch-flow">
@@ -105,13 +110,9 @@
           <div class="arch-arrow" aria-hidden="true">→</div>
           <div class="arch-node output"><span>04 · Output</span><b>Private global model</b><small>Utility + privacy budget ε</small></div>
         </div>
-        <div class="threat-bar"><b>Threat model</b><span>An observer or aggregator attempts to infer whether a participant or record influenced the learned model.</span></div>
+        <div class="threat-bar"><b>Threat model</b><span>Observer / Aggregator · Participation inference · Record inference</span></div>
       </div>
     </div>
-  </section>
-
-  <section class="systems-compact">
-    <div class="wrap"><div class="section-head compact-head"><div><div class="kicker">Application systems</div><h2>Where the architectures operate.</h2></div><p>Each architecture is adapted to the observables and constraints of its deployment environment.</p></div><div class="system-grid"><article class="system-card"><h3>Terrestrial networks</h3><p>Secure NOMA, artificial-noise-aided transmission, and multi-user covert communication.</p></article><article class="system-card"><h3>NTN & autonomous platforms</h3><p>UAVs, USVs, satellites, maritime networks, and mobile cyber-physical systems.</p></article><article class="system-card"><h3>Private distributed learning</h3><p>Wireless federated learning and over-the-air aggregation with privacy guarantees.</p></article></div></div>
   </section>
 </main>
 
