@@ -15,3 +15,135 @@ footer{padding:52px 0 26px;background:var(--navy);color:white}.footer-grid{displ
 @media(min-width:901px){.page-hero h1,.framework-section .section-head h2{white-space:nowrap}}
 @media(max-width:900px){.nav{align-items:flex-start;flex-direction:column;padding:17px 0 0}.links{width:100%;overflow-x:auto;gap:22px}.links a{white-space:nowrap;padding:8px 0 14px}.hero-grid,.landing-grid{grid-template-columns:1fr}.news-side{padding:0;border-right:0;border-bottom:1px solid var(--line);padding-bottom:35px}.signal{display:none}.method-grid,.stats-grid{grid-template-columns:repeat(2,1fr)}.system-grid,.member-groups{grid-template-columns:1fr}.section-head{align-items:start;flex-direction:column}.pi-card,.project-card{grid-template-columns:1fr}.portrait{width:180px;min-height:0}.contact-grid{grid-template-columns:1fr}.footer-grid{grid-template-columns:1fr 1fr}}
 @media(max-width:560px){.wrap{width:min(100% - 32px,1180px)}.home-hero{padding:65px 0}section{padding:68px 0}.actions{flex-direction:column}.method-grid,.stats-grid,.pi-meta,.research-links{grid-template-columns:1fr}.research-figure{padding:12px 10px 14px;border-radius:6px}.research-figure figcaption{margin-top:12px;font-size:12px;line-height:1.5}.stat{border-right:1px solid var(--line)}.news-item,.theme{grid-template-columns:1fr;gap:4px}.opening-strip{grid-template-columns:1fr}.pi-card,.project-card{padding:25px}.footer-grid{grid-template-columns:1fr}.copyright{flex-direction:column;gap:10px}}
+
+/* 2026-09 density and research-architecture revision */
+body{font-size:15px;line-height:1.58}
+.wrap{width:min(1160px,calc(100% - 48px))}
+.nav{min-height:68px}
+.links{gap:22px;font-size:13px}
+.links a{padding:24px 0 20px}
+.links{scrollbar-width:none}
+.links::-webkit-scrollbar{display:none}
+.home-hero{padding:50px 0 46px}
+.hero-grid{grid-template-columns:1.28fr .72fr;gap:82px}
+h1{margin:18px 0;font-size:clamp(41px,5.2vw,60px);line-height:1}
+.home-hero p{max-width:620px;font-size:16px}
+.hero-secondary{color:#fff;border-color:rgba(255,255,255,.3)}
+.actions{margin-top:28px}
+.signal{width:min(100%,310px);justify-self:center}
+.btn{min-height:44px;padding:0 18px;font-size:13px}
+section{padding:70px 0}
+.page-hero{padding:25px 0 24px}
+.page-hero .wrap{min-height:96px}
+.page-hero h1.page-title{font-size:clamp(27px,2.7vw,34px)}
+.page-hero p{font-size:14px}
+.section-head{margin-bottom:32px}
+.section-head h2,.content-title{font-size:clamp(31px,4vw,44px);line-height:1.08}
+.compact-head{align-items:center}
+.compact-head p{font-size:14px}
+.overview h2{font-size:clamp(31px,4vw,44px)}
+.overview>p,.prose p{font-size:15px}
+.landing-grid{grid-template-columns:minmax(0,1fr) 320px;gap:62px}
+.news-side-right{padding:0 0 0 28px;border-right:0;border-left:1px solid var(--line)}
+.news-side h2{font-size:28px}
+.news-side .news-item{padding:14px 0}
+.opening-strip{margin-top:34px;padding:22px 26px}
+.opening-strip h3{font-size:21px}
+
+.scope-section{padding:62px 0 68px}
+.scope-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.scope-card{display:flex;min-height:210px;padding:22px;flex-direction:column;border:1px solid var(--line);border-radius:7px;background:#fff;transition:.2s ease}
+.scope-card:hover,.scope-card:focus-visible{color:#fff;background:var(--navy);border-color:var(--navy);transform:translateY(-3px);outline:none}
+.scope-num{color:var(--blue);font-size:10px;font-weight:800;letter-spacing:.09em;text-transform:uppercase}
+.scope-card:hover .scope-num,.scope-card:focus-visible .scope-num{color:var(--cyan)}
+.scope-card h3{margin:30px 0 8px;font-size:20px;line-height:1.16;letter-spacing:-.02em}
+.scope-card p{margin:0;color:var(--muted);font-size:12px}
+.scope-card:hover p,.scope-card:focus-visible p{color:#b7c4d6}
+.scope-link{margin-top:auto;padding-top:20px;color:var(--blue);font-size:11px;font-weight:800}
+.scope-card:hover .scope-link,.scope-card:focus-visible .scope-link{color:var(--cyan)}
+.home-detail-section{padding:66px 0}
+
+.research-intro{padding-bottom:54px}
+.intro-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:72px;align-items:start}
+.intro-grid .content-title{margin-top:8px}
+.intro-grid p{margin:0 0 12px;color:#435066;font-size:15px}
+.section-note{font-size:13px!important;color:var(--muted)!important}
+.scope-jump{display:grid;grid-template-columns:repeat(4,1fr);margin-top:34px;border-top:1px solid var(--line);border-left:1px solid var(--line)}
+.scope-jump a{display:flex;min-height:76px;padding:15px;gap:12px;align-items:center;border-right:1px solid var(--line);border-bottom:1px solid var(--line);font-size:12px;font-weight:750}
+.scope-jump b{color:var(--blue);font-size:11px}
+.scope-jump a:hover,.scope-jump a:focus-visible{background:var(--navy);color:#fff;outline:none}
+.framework-section{padding:62px 0}
+.research-figure{padding:22px 22px 14px}
+
+.architecture-section{padding:72px 0;scroll-margin-top:68px}
+.architecture{display:grid;grid-template-columns:320px minmax(0,1fr);gap:52px;align-items:start}
+.architecture-index{color:var(--blue);font-size:11px;font-weight:800;letter-spacing:.1em;text-transform:uppercase}
+.architecture-copy h2{margin:10px 0 12px;font-size:30px;line-height:1.1;letter-spacing:-.035em}
+.architecture-copy>p{margin:0 0 22px;color:#435066;font-size:14px}
+.architecture-copy dl{margin:0;border-top:1px solid var(--line)}
+.architecture-copy dl div{padding:12px 0;border-bottom:1px solid var(--line)}
+.architecture-copy dt{margin-bottom:3px;color:var(--blue);font-size:10px;font-weight:800;letter-spacing:.07em;text-transform:uppercase}
+.architecture-copy dd{margin:0;color:#435066;font-size:12px;line-height:1.5}
+.arch-panel{padding:22px;border:1px solid var(--line);border-radius:9px;background:#fff;box-shadow:0 14px 36px rgba(11,25,48,.06)}
+.arch-label{margin-bottom:16px;color:var(--muted);font-size:10px;font-weight:800;letter-spacing:.11em;text-transform:uppercase}
+.arch-flow{display:grid;grid-template-columns:minmax(0,1fr) 18px minmax(0,1fr) 18px minmax(0,1fr) 18px minmax(0,1fr);align-items:stretch}
+.arch-node{display:flex;min-height:142px;padding:16px;flex-direction:column;border:1px solid var(--line);border-radius:6px;background:var(--paper)}
+.arch-node.emphasis{background:#eaf2f8;border-color:#b9cedf}
+.arch-node.output{background:var(--navy);border-color:var(--navy);color:#fff}
+.arch-node span{color:var(--blue);font-size:9px;font-weight:800;letter-spacing:.07em;text-transform:uppercase}
+.arch-node.output span{color:var(--cyan)}
+.arch-node b{margin:25px 0 8px;font-size:13px;line-height:1.25}
+.arch-node small{margin-top:auto;color:var(--muted);font-size:10px;line-height:1.4}
+.arch-node.output small{color:#aebdcd}
+.arch-arrow{display:grid;place-items:center;color:var(--blue);font-size:14px;font-weight:800}
+.threat-bar{display:grid;grid-template-columns:92px 1fr;gap:12px;margin-top:14px;padding:12px 14px;background:#f7f9fc;border-left:3px solid var(--blue);font-size:11px}
+.threat-bar b{color:var(--blue)}
+.threat-bar span{color:var(--muted)}
+.systems-compact{padding:64px 0}
+.system-card{padding:22px}
+.system-card h3{font-size:21px}
+.project-card{min-height:210px;padding:32px}
+.project-copy h2{font-size:27px;line-height:1.16}
+.pub-section{padding:58px 0}
+.pub-section h2{font-size:32px}
+.pi-card h2{font-size:33px}
+.contact-card h2{font-size:27px}
+
+@media(max-width:1000px){
+  .scope-grid{grid-template-columns:repeat(2,1fr)}
+  .scope-card{min-height:190px}
+  .architecture{grid-template-columns:1fr;gap:28px}
+  .architecture-copy{display:grid;grid-template-columns:1fr 1.25fr;gap:30px}
+  .architecture-copy dl{grid-column:1/-1}
+}
+
+@media(max-width:900px){
+  .home-hero{padding:48px 0 44px}
+  .landing-grid,.intro-grid{grid-template-columns:1fr;gap:38px}
+  .news-side-right{padding:30px 0 0;border-left:0;border-top:1px solid var(--line)}
+  .scope-jump{grid-template-columns:repeat(2,1fr)}
+  .project-card{min-height:0}
+}
+
+@media(max-width:720px){
+  section{padding:56px 0}
+  .arch-flow{grid-template-columns:1fr}
+  .arch-arrow{height:24px;transform:rotate(90deg)}
+  .arch-node{min-height:118px}
+  .arch-node b{margin-top:18px}
+  .architecture-copy{display:block}
+  .architecture-copy dl{margin-top:22px}
+}
+
+@media(max-width:560px){
+  body{font-size:14px}
+  .home-hero{padding:42px 0 38px}
+  h1{font-size:clamp(38px,13vw,54px)}
+  .scope-grid,.scope-jump{grid-template-columns:1fr}
+  .scope-card{min-height:170px}
+  .scope-card h3{margin-top:24px}
+  .architecture-section{padding:56px 0}
+  .arch-panel{padding:14px}
+  .threat-bar{grid-template-columns:1fr;gap:4px}
+  .project-copy h2{font-size:22px}
+}
