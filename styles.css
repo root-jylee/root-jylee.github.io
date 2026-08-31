@@ -63,12 +63,22 @@ section{padding:70px 0}
 .scope-link{margin-top:auto;padding-top:20px;color:var(--blue);font-size:11px;font-weight:800}
 .scope-card:hover .scope-link,.scope-card:focus-visible .scope-link{color:var(--cyan)}
 .home-detail-section{padding:66px 0}
+.home-overview-section{padding:58px 0 62px}
 .openings-section{padding:36px 0}
 .openings-section .opening-strip{margin-top:0}
 .overview-keywords{margin-top:30px;border-top:1px solid var(--line)}
 .overview-keywords div{display:grid;grid-template-columns:145px 1fr;gap:22px;padding:18px 0;border-bottom:1px solid var(--line)}
 .overview-keywords span{color:var(--blue);font-size:10px;font-weight:800;letter-spacing:.08em;text-transform:uppercase}
 .overview-keywords b{font-size:13px;line-height:1.45}
+.home-overview-section .overview-keywords{margin-top:0}
+
+.home-news-section{padding:58px 0 64px}
+.home-news-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));border-top:1px solid var(--line);border-left:1px solid var(--line)}
+.home-news-list article{min-height:126px;padding:20px 22px;border-right:1px solid var(--line);border-bottom:1px solid var(--line)}
+.home-news-list article>div{display:flex;gap:10px;align-items:baseline;margin-bottom:18px}
+.home-news-list span{color:var(--blue);font-size:11px;font-weight:800}
+.home-news-list b{color:var(--muted);font-size:9px;letter-spacing:.08em;text-transform:uppercase}
+.home-news-list p{margin:0;font-size:13px;line-height:1.5}
 
 .research-intro{padding:54px 0 50px;scroll-margin-top:68px}
 .section-label-row{margin-bottom:22px}
@@ -158,6 +168,7 @@ section{padding:70px 0}
   .architecture-copy{display:block}
   .architecture-copy dl{margin-top:22px}
   .overview-keywords div{grid-template-columns:1fr;gap:5px}
+  .home-news-list{grid-template-columns:1fr}
   .news-archive article{grid-template-columns:1fr;gap:8px}
 }
 
