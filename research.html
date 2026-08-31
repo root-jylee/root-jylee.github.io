@@ -1,75 +1,126 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Research | ROOT Lab</title>
-  <link rel="stylesheet" href="assets/css/style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="ROOT Lab research scope and detailed physical-layer security architectures">
+  <title>Research — ROOT Lab</title>
+  <link rel="stylesheet" href="styles.css?v=20260901-9">
 </head>
 <body>
-<div class="page">
-  <header class="site-header">
-    <h1 class="site-title">ROOT Lab</h1>
-    <p class="site-subtitle">Physical-Layer Root of Trust for Intelligent Secure Systems</p>
-    <p class="site-tagline">Building trust from physical signals.</p>
-    <nav class="nav" aria-label="Main navigation">
-      <a href="index.html">Home</a>
-      <a href="research.html" class="active">Research</a>
-      <a href="publications.html">Publications</a>
-      <a href="members.html">Members</a>
-      <a href="projects.html">Projects</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
+<div class="topline"></div>
+<header><div class="wrap nav"><a class="brand" href="index.html"><span class="mark">R</span><span>ROOT Lab<small>Physical-Layer Root of Trust</small></span></a><nav class="links" aria-label="Main navigation"><a href="index.html">Home</a><a class="active" href="research.html">Research</a><a href="publications.html">Publications</a><a href="members.html">Members</a><a href="projects.html">Projects</a><a href="contact.html">Contact</a></nav></div></header>
 
-  <main>
-    <section>
-      <h2>Research Scope</h2>
-      <p>ROOT Lab develops physical-layer security, privacy, and trust methods for communication systems. Our work connects security methods such as covert communication, physical-layer authentication, physical-layer secrecy, and differential privacy with the physical-layer communication domain, where physical signals, channels, mobility, hardware characteristics, interference, and noise shape both vulnerability and trust.</p>
-      <img class="research-figure" src="assets/img/research-framework.svg" alt="ROOT Lab research framework: security methods, physical-layer communication domain, and application systems">
-    </section>
+<main>
+  <div class="page-hero"><div class="wrap"><h1 class="page-title">Research</h1><p>Research scope, research overview, and application systems</p></div></div>
 
-    <section>
-      <h2>Security and Privacy Methods</h2>
-      <p>We study security and privacy methods according to what an adversary attempts to infer from physical signals.</p>
-      <ul>
-        <li><strong>Did transmission occur?</strong> → Covert communication</li>
-        <li><strong>Who generated the signal?</strong> → Physical-layer authentication</li>
-        <li><strong>What was transmitted?</strong> → Physical-layer secrecy</li>
-        <li><strong>Was individual data exposed?</strong> → Differential privacy</li>
-      </ul>
-    </section>
+  <section class="research-intro" id="research-scope">
+    <div class="wrap"><div class="section-label-row"><div class="kicker">Research Scope</div></div></div>
+    <div class="wrap scope-jump" aria-label="Research architecture navigation">
+      <a href="#covert-communication"><b>01</b><span>Covert communication</span></a>
+      <a href="#authentication"><b>02</b><span>Physical-layer authentication</span></a>
+      <a href="#secrecy"><b>03</b><span>Physical-layer secrecy</span></a>
+      <a href="#differential-privacy"><b>04</b><span>Differential privacy</span></a>
+    </div>
+  </section>
 
-    <section>
-      <h2>Physical-Layer Communication Domain</h2>
-      <p>Our domain is physical-layer communication. We study how channels, propagation environments, signal statistics, hardware fingerprints, mobility, interference, and noise can be used not only as impairments, but also as security resources. This perspective allows ROOT Lab to study physical-layer trust without being restricted to a single communication medium.</p>
-    </section>
+  <section class="paper research-visual-section research-overview-section" id="research-overview">
+    <div class="wrap">
+      <div class="section-label-row"><div class="kicker">Research Overview</div></div>
+      <figure class="research-figure framework-figure"><img src="assets/img/research-framework.svg?v=20260825" alt="ROOT Lab research framework connecting security methods, the physical-layer communication domain, and application systems"></figure>
+    </div>
+  </section>
 
-    <section>
-      <h2>Application Systems</h2>
-      <p>We apply physical-layer security and privacy methods to communication systems in which trust must be established from signals, channels, and devices rather than from software-layer assumptions alone.</p>
-      <ul>
-        <li><strong>Terrestrial base-station communication</strong>: We study secure and private communication methods for cellular and base-station systems, including secure NOMA, artificial-noise-aided transmission, and multi-user covert communication.</li>
-        <li><strong>NTN and autonomous platforms</strong>: We study physical-layer trust for UAVs, USVs, satellites, maritime networks, and mobile cyber-physical systems, where mobility, propagation, and hardware characteristics directly affect security.</li>
-        <li><strong>Private wireless distributed learning</strong>: We study privacy and security for wireless federated learning and over-the-air aggregation, where learning updates are transmitted over physical-layer channels and may reveal private data or device participation.</li>
-      </ul>
-      <img class="research-figure" src="assets/img/research-systems.svg" alt="Representative ROOT Lab application systems: terrestrial base-station communication, UAV and maritime autonomous platforms, LEO satellite authentication, awareness-driven covert ISAC, and private wireless distributed learning">
-    </section>
+  <section class="research-visual-section application-systems-section" id="application-systems">
+    <div class="wrap">
+      <div class="section-label-row"><div class="kicker">Application Systems</div></div>
+      <figure class="research-figure systems-figure"><img src="assets/img/research-systems.svg?v=20260825" alt="Representative ROOT Lab systems including terrestrial cellular networks, UAV and maritime platforms, LEO satellites, covert ISAC, and private distributed learning"></figure>
+      <div class="overview-themes" aria-label="Representative research themes">
+        <span>Multi-User Covert Communication</span>
+        <span>Mobile Physical-Layer Authentication</span>
+        <span>Secrecy & Private Learning</span>
+        <span>Awareness-Driven Intelligent Security</span>
+      </div>
+    </div>
+  </section>
 
-    <section>
-      <h2>Representative Research Themes</h2>
-      <ul>
-        <li><strong>Covert communication in multi-user networks</strong>: We exploit cooperative users, spatial heterogeneity, and channel correlation to hide the existence of transmissions from a warden while maintaining reliable communication to Bob.</li>
-        <li><strong>Physical-layer authentication for mobile platforms</strong>: We design challenge-response authentication mechanisms that verify a transmitter from spatial channels, 3D channel maps, and mobility-induced physical consistency.</li>
-        <li><strong>Physical-layer secrecy and private learning</strong>: We use information-theoretic security, artificial noise, differential privacy, and over-the-air aggregation to protect content and individual data contribution in wireless learning systems.</li>
-        <li><strong>Awareness-driven intelligent security</strong>: We study adaptive security systems that sense, localize, and reason about adversaries, enabling closed-loop protection in covert ISAC and future intelligent communication systems.</li>
-      </ul>
-    </section>
-  </main>
+  <section class="architecture-section" id="covert-communication">
+    <div class="wrap architecture">
+      <div class="architecture-copy"><span class="architecture-index">01 · Detection</span><h2>Covert Communication</h2><dl><div><dt>Adversary question</dt><dd>Transmission occurrence</dd></div><div><dt>Physical resources</dt><dd>Channel uncertainty · Interference · Spatial heterogeneity · Cooperative users</dd></div><div><dt>Trust outcome</dt><dd>Low detectability · Reliable decoding</dd></div></dl></div>
+      <div class="arch-panel">
+        <div class="arch-label">System architecture</div>
+        <div class="arch-flow">
+          <div class="arch-node"><span>01 · Inputs</span><b>Source + cooperative users</b><small>Messages, user activity, channel state</small></div>
+          <div class="arch-arrow" aria-hidden="true">→</div>
+          <div class="arch-node emphasis"><span>02 · Physical-layer design</span><b>Covertness control</b><small>Power, waveform, scheduling, interference</small></div>
+          <div class="arch-arrow" aria-hidden="true">→</div>
+          <div class="arch-node"><span>03 · Wireless environment</span><b>Bob + warden observations</b><small>Reliability versus detectability</small></div>
+          <div class="arch-arrow" aria-hidden="true">→</div>
+          <div class="arch-node output"><span>04 · Output</span><b>Covert reliable link</b><small>Detection error + throughput</small></div>
+        </div>
+        <div class="threat-bar"><b>Threat model</b><span>Warden · Binary hypothesis testing · Received-signal statistics</span></div>
+      </div>
+    </div>
+  </section>
 
-  <footer class="site-footer">
-    <p>© ROOT Lab. Last updated: 2026.</p>
-  </footer>
-</div>
+  <section class="paper architecture-section" id="authentication">
+    <div class="wrap architecture">
+      <div class="architecture-copy"><span class="architecture-index">02 · Identity</span><h2>Physical-Layer Authentication</h2><dl><div><dt>Adversary question</dt><dd>Signal identity</dd></div><div><dt>Physical resources</dt><dd>Spatial channels · Hardware traits · Mobility · 3D channel maps</dd></div><div><dt>Trust outcome</dt><dd>Robust identity decision · Accept / Reject</dd></div></dl></div>
+      <div class="arch-panel">
+        <div class="arch-label">System architecture</div>
+        <div class="arch-flow">
+          <div class="arch-node"><span>01 · Inputs</span><b>Claimed device + challenge</b><small>Packet, position, motion context</small></div>
+          <div class="arch-arrow" aria-hidden="true">→</div>
+          <div class="arch-node emphasis"><span>02 · Evidence extraction</span><b>Physical fingerprint</b><small>CSI, RF traits, spatial consistency</small></div>
+          <div class="arch-arrow" aria-hidden="true">→</div>
+          <div class="arch-node"><span>03 · Verification</span><b>Reference comparison</b><small>Channel map, history, learned model</small></div>
+          <div class="arch-arrow" aria-hidden="true">→</div>
+          <div class="arch-node output"><span>04 · Output</span><b>Accept / reject identity</b><small>False accept + false reject</small></div>
+        </div>
+        <div class="threat-bar"><b>Threat model</b><span>Impersonation · Replay · Forged identity · Physical mismatch</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="architecture-section" id="secrecy">
+    <div class="wrap architecture">
+      <div class="architecture-copy"><span class="architecture-index">03 · Content</span><h2>Physical-Layer Secrecy</h2><dl><div><dt>Adversary question</dt><dd>Transmitted content</dd></div><div><dt>Physical resources</dt><dd>Channel advantage · Beamforming · Artificial noise · Multi-user diversity</dd></div><div><dt>Trust outcome</dt><dd>Reliable reception · Bounded information leakage</dd></div></dl></div>
+      <div class="arch-panel">
+        <div class="arch-label">System architecture</div>
+        <div class="arch-flow">
+          <div class="arch-node"><span>01 · Inputs</span><b>Confidential data + CSI</b><small>Message and channel knowledge</small></div>
+          <div class="arch-arrow" aria-hidden="true">→</div>
+          <div class="arch-node emphasis"><span>02 · Secure transmission</span><b>Precoding + artificial noise</b><small>Signal and interference shaping</small></div>
+          <div class="arch-arrow" aria-hidden="true">→</div>
+          <div class="arch-node"><span>03 · Dual channels</span><b>Legitimate user + Eve</b><small>Unequal received information</small></div>
+          <div class="arch-arrow" aria-hidden="true">→</div>
+          <div class="arch-node output"><span>04 · Output</span><b>Confidential reliable link</b><small>Secrecy rate + outage</small></div>
+        </div>
+        <div class="threat-bar"><b>Threat model</b><span>Passive Eve · Wireless observation · Content recovery</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="paper architecture-section" id="differential-privacy">
+    <div class="wrap architecture">
+      <div class="architecture-copy"><span class="architecture-index">04 · Privacy</span><h2>Differential Privacy</h2><dl><div><dt>Adversary question</dt><dd>Individual data exposure</dd></div><div><dt>Physical resources</dt><dd>Wireless superposition · Aggregation · Channel noise · Power control</dd></div><div><dt>Trust outcome</dt><dd>Global model utility · Privacy budget ε</dd></div></dl></div>
+      <div class="arch-panel">
+        <div class="arch-label">System architecture</div>
+        <div class="arch-flow">
+          <div class="arch-node"><span>01 · Inputs</span><b>Local data + model updates</b><small>Distributed user contributions</small></div>
+          <div class="arch-arrow" aria-hidden="true">→</div>
+          <div class="arch-node emphasis"><span>02 · Privacy mechanism</span><b>Clip + perturb + transmit</b><small>Calibrated noise and power</small></div>
+          <div class="arch-arrow" aria-hidden="true">→</div>
+          <div class="arch-node"><span>03 · OTA aggregation</span><b>Wireless superposition</b><small>Aggregate without raw updates</small></div>
+          <div class="arch-arrow" aria-hidden="true">→</div>
+          <div class="arch-node output"><span>04 · Output</span><b>Private global model</b><small>Utility + privacy budget ε</small></div>
+        </div>
+        <div class="threat-bar"><b>Threat model</b><span>Observer / Aggregator · Participation inference · Record inference</span></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer><div class="wrap"><div class="footer-grid"><div><div class="brand"><span class="mark">R</span><span>ROOT Lab</span></div><p>Physical-Layer Root of Trust for Intelligent Secure Systems<br>National Korea Maritime & Ocean University</p></div><div><div class="footer-title">Navigate</div><a href="publications.html">Publications</a><a href="members.html">Members</a><a href="projects.html">Projects</a></div><div><div class="footer-title">Connect</div><a href="mailto:haetsal120@gmail.com">haetsal120@gmail.com</a><a href="contact.html">Contact & location</a><a class="github-link" href="https://github.com/root-jylee" target="_blank" rel="noopener noreferrer" aria-label="ROOT Lab GitHub organization"><svg viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M8 0C3.58 0 0 3.64 0 8.13c0 3.59 2.29 6.64 5.47 7.71.4.08.55-.18.55-.39 0-.19-.01-.82-.01-1.49-2.23.49-2.7-1.09-2.7-1.09-.36-.94-.88-1.19-.88-1.19-.72-.5.05-.49.05-.49.8.06 1.22.83 1.22.83.71 1.24 1.87.88 2.33.67.07-.52.28-.88.51-1.08-1.78-.21-3.65-.9-3.65-4.02 0-.89.31-1.62.82-2.19-.08-.21-.36-1.04.08-2.16 0 0 .67-.22 2.2.84A7.4 7.4 0 0 1 8 3.53c.68 0 1.36.09 2 .27 1.53-1.06 2.2-.84 2.2-.84.44 1.12.16 1.95.08 2.16.51.57.82 1.3.82 2.19 0 3.13-1.88 3.81-3.66 4.01.29.25.54.74.54 1.5 0 1.08-.01 1.95-.01 2.21 0 .22.14.47.55.39A8.03 8.03 0 0 0 16 8.13C16 3.64 12.42 0 8 0z"/></svg><span>GitHub Organization</span></a></div></div><div class="copyright"><span>© 2026 ROOT Lab</span><span>Building trust from physical signals.</span></div></div></footer>
 </body>
 </html>
