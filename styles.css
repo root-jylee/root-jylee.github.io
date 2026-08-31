@@ -70,11 +70,6 @@ section{padding:70px 0}
 .overview-keywords span{color:var(--blue);font-size:10px;font-weight:800;letter-spacing:.08em;text-transform:uppercase}
 .overview-keywords b{font-size:13px;line-height:1.45}
 
-.research-subnav{background:#fff;border-bottom:1px solid var(--line)}
-.research-subnav .wrap{display:flex;gap:34px;overflow-x:auto;scrollbar-width:none}
-.research-subnav .wrap::-webkit-scrollbar{display:none}
-.research-subnav a{flex:none;padding:15px 0 13px;border-bottom:2px solid transparent;color:var(--muted);font-size:12px;font-weight:800;letter-spacing:.03em}
-.research-subnav a:hover,.research-subnav a:focus-visible{color:var(--blue);border-bottom-color:var(--blue);outline:none}
 .research-intro{padding:54px 0 50px;scroll-margin-top:68px}
 .section-label-row{margin-bottom:22px}
 .intro-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:72px;align-items:start}
