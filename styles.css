@@ -20,7 +20,7 @@ footer{padding:52px 0 26px;background:var(--navy);color:white}.footer-grid{displ
 body{font-size:15px;line-height:1.58}
 .wrap{width:min(1160px,calc(100% - 48px))}
 .nav{min-height:68px}
-.links{gap:22px;font-size:13px}
+.links{gap:18px;font-size:13px}
 .links a{padding:24px 0 20px}
 .links{scrollbar-width:none}
 .links::-webkit-scrollbar{display:none}
@@ -51,7 +51,7 @@ section{padding:70px 0}
 .opening-strip h3{font-size:21px}
 
 .scope-section{padding:62px 0 68px}
-.scope-section .section-head{display:block}
+.scope-section .section-head{display:block;margin-bottom:24px}
 .scope-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
 .scope-card{display:flex;min-height:210px;padding:22px;flex-direction:column;border:1px solid var(--line);border-radius:7px;background:#fff;transition:.2s ease}
 .scope-card:hover,.scope-card:focus-visible{color:#fff;background:var(--navy);border-color:var(--navy);transform:translateY(-3px);outline:none}
@@ -63,12 +63,20 @@ section{padding:70px 0}
 .scope-link{margin-top:auto;padding-top:20px;color:var(--blue);font-size:11px;font-weight:800}
 .scope-card:hover .scope-link,.scope-card:focus-visible .scope-link{color:var(--cyan)}
 .home-detail-section{padding:66px 0}
+.openings-section{padding:36px 0}
+.openings-section .opening-strip{margin-top:0}
 .overview-keywords{margin-top:30px;border-top:1px solid var(--line)}
 .overview-keywords div{display:grid;grid-template-columns:145px 1fr;gap:22px;padding:18px 0;border-bottom:1px solid var(--line)}
 .overview-keywords span{color:var(--blue);font-size:10px;font-weight:800;letter-spacing:.08em;text-transform:uppercase}
 .overview-keywords b{font-size:13px;line-height:1.45}
 
-.research-intro{padding:58px 0 52px}
+.research-subnav{background:#fff;border-bottom:1px solid var(--line)}
+.research-subnav .wrap{display:flex;gap:34px;overflow-x:auto;scrollbar-width:none}
+.research-subnav .wrap::-webkit-scrollbar{display:none}
+.research-subnav a{flex:none;padding:15px 0 13px;border-bottom:2px solid transparent;color:var(--muted);font-size:12px;font-weight:800;letter-spacing:.03em}
+.research-subnav a:hover,.research-subnav a:focus-visible{color:var(--blue);border-bottom-color:var(--blue);outline:none}
+.research-intro{padding:54px 0 50px;scroll-margin-top:68px}
+.section-label-row{margin-bottom:22px}
 .intro-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:72px;align-items:start}
 .intro-grid .content-title{margin-top:8px}
 .intro-grid p{margin:0 0 12px;color:#435066;font-size:15px}
@@ -80,11 +88,20 @@ section{padding:70px 0}
 .framework-section{padding:62px 0}
 .research-figure{padding:22px 22px 14px}
 .research-overview-section{padding:62px 0}
-.research-overview-section .section-head{margin-bottom:28px}
+.research-overview-section{scroll-margin-top:68px}
+.application-systems-section{padding:62px 0;scroll-margin-top:68px}
 .overview-visual-head{margin:42px auto 12px;max-width:1040px;color:var(--blue);font-size:11px;font-weight:800;letter-spacing:.1em;text-transform:uppercase}
 .research-overview-section .systems-figure{margin-top:0}
 .overview-themes{display:grid;grid-template-columns:repeat(4,1fr);max-width:1040px;margin:16px auto 0;border-top:1px solid var(--line);border-left:1px solid var(--line)}
 .overview-themes span{padding:15px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);background:#fff;font-size:11px;font-weight:750}
+
+.news-page-section{padding:56px 0 72px}
+.news-archive{border-top:1px solid var(--line)}
+.news-archive article{display:grid;grid-template-columns:170px minmax(0,1fr);gap:38px;padding:24px 0;border-bottom:1px solid var(--line)}
+.news-archive article>div{display:flex;gap:10px;align-items:baseline}
+.news-archive span{color:var(--blue);font-size:12px;font-weight:800}
+.news-archive b{color:var(--muted);font-size:10px;letter-spacing:.08em;text-transform:uppercase}
+.news-archive p{margin:0;font-size:15px}
 
 .architecture-section{padding:72px 0;scroll-margin-top:68px}
 .architecture{display:grid;grid-template-columns:320px minmax(0,1fr);gap:52px;align-items:start}
@@ -146,6 +163,7 @@ section{padding:70px 0}
   .architecture-copy{display:block}
   .architecture-copy dl{margin-top:22px}
   .overview-keywords div{grid-template-columns:1fr;gap:5px}
+  .news-archive article{grid-template-columns:1fr;gap:8px}
 }
 
 @media(max-width:560px){
