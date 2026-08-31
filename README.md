@@ -2,10 +2,10 @@
 
 Official website source for **ROOT Lab — Physical-Layer Root of Trust for Intelligent Secure Systems** at National Korea Maritime & Ocean University.
 
-- Website: <https://s2in0217.github.io/root-jylee.github.io/>
-- Research: <https://s2in0217.github.io/root-jylee.github.io/research.html>
-- Publications: <https://s2in0217.github.io/root-jylee.github.io/publications.html>
-- Members: <https://s2in0217.github.io/root-jylee.github.io/members.html>
+- Website: <https://root-jylee.github.io/>
+- Research: <https://root-jylee.github.io/research.html>
+- Publications: <https://root-jylee.github.io/publications.html>
+- Members: <https://root-jylee.github.io/members.html>
 
 ## Site structure
 
@@ -98,4 +98,4 @@ A ready-to-copy draft is maintained in [`docs/organization-profile-README.md`](d
 
 ROOT Lab is led by **Jinyoung Lee, Ph.D.**, Department of Electronics and Electrical Information Engineering, National Korea Maritime & Ocean University.
 
-See the [contact page](https://s2in0217.github.io/root-jylee.github.io/contact.html) for current contact details.
+See the [contact page](https://root-jylee.github.io/contact.html) for current contact details.
