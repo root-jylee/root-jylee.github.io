@@ -192,3 +192,11 @@ section{padding:70px 0}
   .arch-panel{padding:14px}
   .threat-bar{grid-template-columns:1fr;gap:4px}
 }
+
+.opening-strip a:not(.btn){color:var(--navy);font-weight:700;text-decoration:underline;text-decoration-color:rgba(20,91,215,.35);text-underline-offset:4px}
+.opening-strip a:not(.btn):hover{color:var(--blue);text-decoration-color:var(--blue)}
+
+/* Location map (contact) */
+.map-embed{overflow:hidden;border:1px solid var(--line);border-radius:7px;background:var(--paper)}
+.map-embed iframe{display:block;width:100%;height:420px;border:0}
+@media(max-width:560px){.map-embed iframe{height:290px}}
