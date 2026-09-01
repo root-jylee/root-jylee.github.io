@@ -19,7 +19,7 @@
     <div class="wrap scope-jump" aria-label="Research architecture navigation">
       <a href="#covert-communication"><b>01</b><span>Covert communication</span></a>
       <a href="#authentication"><b>02</b><span>Physical-layer authentication</span></a>
-      <a href="#secrecy"><b>03</b><span>Physical-layer secrecy</span></a>
+      <a href="#key-generation"><b>03</b><span>Physical-layer key generation</span></a>
       <a href="#differential-privacy"><b>04</b><span>Differential privacy</span></a>
     </div>
   </section>
@@ -38,7 +38,7 @@
       <div class="overview-themes" aria-label="Representative research themes">
         <span>Multi-User Covert Communication</span>
         <span>Mobile Physical-Layer Authentication</span>
-        <span>Secrecy & Private Learning</span>
+        <span>Key Generation &amp; Private Learning</span>
         <span>Awareness-Driven Intelligent Security</span>
       </div>
     </div>
@@ -82,21 +82,21 @@
     </div>
   </section>
 
-  <section class="architecture-section" id="secrecy">
+  <section class="architecture-section" id="key-generation">
     <div class="wrap architecture">
-      <div class="architecture-copy"><span class="architecture-index">03 · Content</span><h2>Physical-Layer Secrecy</h2><dl><div><dt>Adversary question</dt><dd>Transmitted content</dd></div><div><dt>Physical resources</dt><dd>Channel advantage · Beamforming · Artificial noise · Multi-user diversity</dd></div><div><dt>Trust outcome</dt><dd>Reliable reception · Bounded information leakage</dd></div></dl></div>
+      <div class="architecture-copy"><span class="architecture-index">03 · Secret</span><h2>Physical-Layer Key Generation</h2><dl><div><dt>Adversary question</dt><dd>Reproducing the shared key</dd></div><div><dt>Physical resources</dt><dd>Channel reciprocity · Randomness · Multipath entropy · Probing</dd></div><div><dt>Trust outcome</dt><dd>Shared secret key · Bounded key disagreement</dd></div></dl></div>
       <div class="arch-panel">
         <div class="arch-label">System architecture</div>
         <div class="arch-flow">
-          <div class="arch-node"><span>01 · Inputs</span><b>Confidential data + CSI</b><small>Message and channel knowledge</small></div>
+          <div class="arch-node"><span>01 · Probing</span><b>Bidirectional channel probing</b><small>Reciprocal observations at both ends</small></div>
           <div class="arch-arrow" aria-hidden="true">→</div>
-          <div class="arch-node emphasis"><span>02 · Secure transmission</span><b>Precoding + artificial noise</b><small>Signal and interference shaping</small></div>
+          <div class="arch-node emphasis"><span>02 · Extraction</span><b>Quantization + reconciliation</b><small>Randomness extraction and error correction</small></div>
           <div class="arch-arrow" aria-hidden="true">→</div>
-          <div class="arch-node"><span>03 · Dual channels</span><b>Legitimate user + Eve</b><small>Unequal received information</small></div>
+          <div class="arch-node"><span>03 · Decorrelation</span><b>Eve's independent channel</b><small>Uncorrelated observation beyond half a wavelength</small></div>
           <div class="arch-arrow" aria-hidden="true">→</div>
-          <div class="arch-node output"><span>04 · Output</span><b>Confidential reliable link</b><small>Secrecy rate + outage</small></div>
+          <div class="arch-node output"><span>04 · Output</span><b>Shared secret key</b><small>KGR + KDR</small></div>
         </div>
-        <div class="threat-bar"><b>Threat model</b><span>Passive Eve · Wireless observation · Content recovery</span></div>
+        <div class="threat-bar"><b>Threat model</b><span>Passive Eve · Independent channel observation · Key inference</span></div>
       </div>
     </div>
   </section>
@@ -121,6 +121,6 @@
   </section>
 </main>
 
-<footer><div class="wrap"><div class="footer-grid"><div><div class="brand"><span class="mark">R</span><span>ROOT Lab</span></div><p>Physical-Layer Root of Trust for Intelligent Secure Systems<br>National Korea Maritime & Ocean University</p></div><div><div class="footer-title">Navigate</div><a href="index.html">Home</a><a href="publications.html">Publications</a><a href="members.html">Members</a><a href="projects.html">Projects</a></div><div><div class="footer-title">Connect</div><a href="mailto:haetsal120@gmail.com">haetsal120@gmail.com</a><a href="contact.html">Contact</a><a class="github-link" href="https://github.com/root-jylee" target="_blank" rel="noopener noreferrer" aria-label="ROOT Lab GitHub organization"><svg viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M8 0C3.58 0 0 3.64 0 8.13c0 3.59 2.29 6.64 5.47 7.71.4.08.55-.18.55-.39 0-.19-.01-.82-.01-1.49-2.23.49-2.7-1.09-2.7-1.09-.36-.94-.88-1.19-.88-1.19-.72-.5.05-.49.05-.49.8.06 1.22.83 1.22.83.71 1.24 1.87.88 2.33.67.07-.52.28-.88.51-1.08-1.78-.21-3.65-.9-3.65-4.02 0-.89.31-1.62.82-2.19-.08-.21-.36-1.04.08-2.16 0 0 .67-.22 2.2.84A7.4 7.4 0 0 1 8 3.53c.68 0 1.36.09 2 .27 1.53-1.06 2.2-.84 2.2-.84.44 1.12.16 1.95.08 2.16.51.57.82 1.3.82 2.19 0 3.13-1.88 3.81-3.66 4.01.29.25.54.74.54 1.5 0 1.08-.01 1.95-.01 2.21 0 .22.14.47.55.39A8.03 8.03 0 0 0 16 8.13C16 3.64 12.42 0 8 0z"/></svg><span>GitHub Organization</span></a></div></div><div class="copyright"><span>© 2026 ROOT Lab</span><span>Building trust from physical signals.</span></div></div></footer>
+<footer><div class="wrap"><div class="footer-grid"><div><div class="brand"><span class="mark">R</span><span>ROOT Lab</span></div><p>Physical Layer Security for Communication Systems<br>The Catholic University of Korea</p></div><div><div class="footer-title">Navigate</div><a href="index.html">Home</a><a href="publications.html">Publications</a><a href="members.html">Members</a><a href="projects.html">Projects</a></div><div><div class="footer-title">Connect</div><a href="mailto:haetsal120@gmail.com">haetsal120@gmail.com</a><a href="contact.html">Contact</a><a class="github-link" href="https://github.com/root-jylee" target="_blank" rel="noopener noreferrer" aria-label="ROOT Lab GitHub organization"><svg viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M8 0C3.58 0 0 3.64 0 8.13c0 3.59 2.29 6.64 5.47 7.71.4.08.55-.18.55-.39 0-.19-.01-.82-.01-1.49-2.23.49-2.7-1.09-2.7-1.09-.36-.94-.88-1.19-.88-1.19-.72-.5.05-.49.05-.49.8.06 1.22.83 1.22.83.71 1.24 1.87.88 2.33.67.07-.52.28-.88.51-1.08-1.78-.21-3.65-.9-3.65-4.02 0-.89.31-1.62.82-2.19-.08-.21-.36-1.04.08-2.16 0 0 .67-.22 2.2.84A7.4 7.4 0 0 1 8 3.53c.68 0 1.36.09 2 .27 1.53-1.06 2.2-.84 2.2-.84.44 1.12.16 1.95.08 2.16.51.57.82 1.3.82 2.19 0 3.13-1.88 3.81-3.66 4.01.29.25.54.74.54 1.5 0 1.08-.01 1.95-.01 2.21 0 .22.14.47.55.39A8.03 8.03 0 0 0 16 8.13C16 3.64 12.42 0 8 0z"/></svg><span>GitHub Organization</span></a></div></div><div class="copyright"><span>© 2026 ROOT Lab</span><span>Security ROOTed in the Physical Layer.</span></div></div></footer>
 </body>
 </html>
