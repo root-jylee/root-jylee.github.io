@@ -205,7 +205,9 @@ section{padding:70px 0}
 .rootmark{color:#ffd07b;font-weight:800}
 .home-hero p.hero-affil{max-width:none;margin:18px 0 0;color:var(--cyan);font-size:22px;font-weight:700;letter-spacing:-.015em}
 .home-hero p.lab-name{max-width:none;margin:16px 0 0;color:#dbe7f6;font-size:22px;font-weight:800;letter-spacing:-.01em}
-.home-hero p.lab-name+p{margin-top:22px}
+.overview-intro{max-width:780px;margin:0 0 34px}
+.overview-intro b{display:block;font:500 27px/1.25 var(--serif);letter-spacing:-.025em}
+.overview-intro p{margin:12px 0 0;color:var(--muted)}
 
 /* Gallery */
 .gallery-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
@@ -217,4 +219,4 @@ section{padding:70px 0}
 .gallery-empty .link-list{justify-content:center}
 @media(max-width:900px){.gallery-grid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:560px){.gallery-grid{grid-template-columns:1fr}.home-hero p.hero-affil,.home-hero p.lab-name{font-size:17px}}
-
+@media(max-width:560px){.overview-intro b{font-size:21px}.overview-intro{margin-bottom:26px}}
