@@ -272,3 +272,22 @@ header .wrap{width:calc(100% - 64px);max-width:none}
 @media(max-width:900px){header .wrap{width:calc(100% - 32px)}}
 
 .about-lockup{width:min(560px,100%)}
+
+/* Fluid type — sizes scale with the viewport between fixed bounds (phone → wide desktop) */
+body{font-size:clamp(15px,14px + .28vw,17.5px)}
+.links{font-size:clamp(13px,12px + .2vw,15px)}
+.kicker{font-size:clamp(14px,13px + .15vw,15.5px)}
+.section-title{font-size:clamp(24px,19px + .9vw,32px)}
+.page-hero h1.page-title{font-size:clamp(28px,22px + 1.1vw,40px)}
+.page-hero p{font-size:clamp(14px,13px + .2vw,16px)}
+.pub-section h2,.pi-card h2,.contact-card h2{font-size:clamp(24px,19px + .8vw,33px)}
+.member-group h3{font-size:clamp(19px,16px + .5vw,24px)}
+.scope-card h3{font-size:clamp(18px,15px + .45vw,21px)}
+.theme h3,.about-grid h3,.opening-strip h3{font-size:clamp(17px,15px + .35vw,20px)}
+.gallery-teaser-section .opening-strip h3{font-size:clamp(20px,17px + .6vw,26px)}
+.about-grid p,.openings-section .theme p,.openings-section .opening-strip p{font-size:clamp(15px,14px + .2vw,16.5px)}
+.scope-card p,.home-news-item p,.overview-note{font-size:clamp(13px,12px + .2vw,14.5px)}
+.news-card-link,.scope-link,.more-link{font-size:clamp(12px,11px + .15vw,13px)}
+.footer-grid p,.footer-grid a{font-size:clamp(13px,12px + .15vw,14px)}
+.copyright{font-size:clamp(12px,11.5px + .1vw,13px)}
+
