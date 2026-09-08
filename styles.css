@@ -232,9 +232,6 @@ section{padding:70px 0}
 .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px}
 .about-grid h3{margin:0 0 10px;font-size:12px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--blue)}
 .about-grid p{margin:0;font-size:15px;line-height:1.75}
-.about-callout{margin-top:34px;padding:22px 26px;background:var(--paper);border-left:4px solid #b27b21;border-radius:0 7px 7px 0}
-.about-callout b{display:block;margin-bottom:8px;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#8a5e14}
-.about-callout p{margin:0;color:var(--muted)}
 .research-lead{max-width:760px;margin:-6px 0 28px;color:var(--muted)}
 .gallery-teaser-section{padding:36px 0 72px}
 @media(max-width:900px){.about-grid{grid-template-columns:1fr;gap:26px}}
