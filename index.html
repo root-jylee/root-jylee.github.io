@@ -5,27 +5,28 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta property="og:title" content="ROOT Lab — Root of Trust from the Physical Layer"><meta property="og:image" content="https://root-jylee.github.io/assets/img/og-image.png"><meta name="description" content="ROOT Lab (보안통신 연구실), The Catholic University of Korea — Root of Trust from the Physical Layer · Physical Layer Security for Communication Systems">
   <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png"><link rel="icon" type="image/png" sizes="64x64" href="assets/img/favicon-64.png"><link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png"><title>ROOT Lab — Root of Trust from the Physical Layer</title>
-  <link rel="stylesheet" href="styles.css?v=20260908-lm9">
+  <link rel="stylesheet" href="styles.css?v=20260908-lm10">
   <style>
-    .home-hero{position:relative;overflow:hidden;background:#061629;color:#fff;padding:0;min-height:clamp(380px,36.4vw,520px);display:flex;align-items:center}
+    .home-hero{position:relative;overflow:hidden;background:#061629;color:#fff;padding:0;min-height:0;aspect-ratio:2079/756;display:flex;align-items:center}
     .home-hero:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(4,17,34,.97) 0%,rgba(4,17,34,.92) 21%,rgba(4,17,34,.62) 38%,rgba(4,17,34,.18) 58%,rgba(4,17,34,.03) 100%);z-index:1;mask-image:none}
     .home-hero:after{content:"";position:absolute;inset:0;background:url('assets/img/root-hero3-1920.jpg') center center/cover no-repeat;z-index:0}
     .home-hero .hero-grid{position:relative;z-index:2;width:min(1180px,calc(100% - 48px));margin:auto;display:block}
-    .hero-copy{max-width:560px;padding:48px 0 44px}
-    .home-hero h1{margin:0 0 12px;font:600 clamp(46px,5.4vw,70px)/.96 var(--serif);letter-spacing:-.055em;text-shadow:0 3px 24px rgba(0,0,0,.28)}
-    .home-hero .lab-name{margin:0;max-width:520px;color:#eef5ff;font-size:clamp(19px,2vw,27px);line-height:1.35;font-weight:650}
+    .hero-copy{max-width:min(560px,60%);padding:clamp(24px,3.5vw,56px) 0}
+    .home-hero h1{margin:0 0 .18em;font:600 clamp(38px,5.4vw,84px)/.96 var(--serif);letter-spacing:-.055em;text-shadow:0 3px 24px rgba(0,0,0,.28)}
+    .home-hero .lab-name{margin:0;max-width:520px;color:#eef5ff;font-size:clamp(17px,2vw,30px);line-height:1.35;font-weight:650}
     .home-hero .lab-name .rootmark{color:#a8d3e2}
-    .home-hero .actions{margin-top:26px}
+    .home-hero .actions{margin-top:clamp(16px,2vw,28px)}
     .home-hero .hero-secondary{color:#eef5ff;border-color:rgba(232,242,255,.5);background:rgba(4,17,34,.25);backdrop-filter:blur(4px)}
     @media(max-width:900px){
-      .home-hero{min-height:460px;align-items:flex-end}
-      .home-hero:after{background-position:64% center}
-      .home-hero:before{background:linear-gradient(180deg,rgba(4,17,34,.10) 0%,rgba(4,17,34,.30) 34%,rgba(4,17,34,.93) 72%,rgba(4,17,34,.98) 100%)}
-      .home-hero .hero-grid{width:min(100% - 36px,1180px)}
-      .hero-copy{max-width:100%;padding:300px 0 46px}
-      .home-hero h1{font-size:clamp(50px,14vw,70px)}
-      .home-hero .lab-name{font-size:20px}
-      .home-hero .actions{flex-wrap:wrap}
+      /* 이미지 블록 위, 남색 텍스트 띠 아래 — 어느 폭에서도 잘리지 않음 */
+      .home-hero{display:block;aspect-ratio:auto}
+      .home-hero:before{position:static;display:block;inset:auto;z-index:auto;aspect-ratio:2079/756;background:url('assets/img/root-hero3-1920.jpg') center center/cover no-repeat}
+      .home-hero:after{display:none}
+      .home-hero .hero-grid{width:min(100% - 32px,1180px)}
+      .hero-copy{max-width:100%;padding:20px 0 26px}
+      .home-hero h1{font-size:clamp(34px,10vw,52px);text-shadow:none}
+      .home-hero .lab-name{font-size:clamp(16px,4.6vw,20px)}
+      .home-hero .actions{flex-wrap:wrap;gap:10px}
     }
   </style>
 </head>

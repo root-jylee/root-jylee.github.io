@@ -267,3 +267,8 @@ section{padding:70px 0}
 /* Apply / gallery strips — no accent bar or panel, a bold heading instead */
 .opening-strip{border-left:0;background:transparent;padding:24px 0 0}
 .opening-strip h3{font-weight:700}
+
+/* Header spans the viewport so the emblem and menu sit at the edges on any display */
+header .wrap{width:calc(100% - 64px);max-width:none}
+@media(max-width:900px){header .wrap{width:calc(100% - 32px)}}
+
