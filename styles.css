@@ -268,3 +268,15 @@ section{padding:70px 0}
 .opening-strip{border-left:0;background:transparent;padding:24px 0 0}
 .opening-strip h3{font-weight:700}
 
+/* Home — second pass, tighter still */
+.about-section{padding:30px 0 26px}
+.about-lockup{margin-bottom:18px}
+.about-grid{gap:32px}
+.openings-section{padding:26px 0}
+.openings-section .theme{padding:18px 0}
+.opening-strip{padding-top:18px}
+.home-news-section{padding:30px 0}
+.research-summary-section{padding:30px 0}
+.gallery-teaser-section{padding:18px 0 40px}
+.section-label-row{margin-bottom:14px}
+
