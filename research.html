@@ -36,6 +36,30 @@
     .axis-chip{margin-top:auto;align-self:flex-start;padding:5px 12px;border-radius:999px;background:var(--paper);border:1px solid var(--line);color:var(--navy);font-size:12.5px;font-weight:700}
     @media(max-width:760px){.phil-flow{grid-template-columns:1fr}.phil-arrow{transform:rotate(90deg);justify-self:center;line-height:1}}
     @media(max-width:640px){.axes-grid{grid-template-columns:1fr}}
+    .design-intro{max-width:940px;margin:0 0 26px;color:var(--ink);font-size:clamp(15px,14px + .3vw,17.5px);line-height:1.75}
+    .design-flow{display:grid;grid-template-columns:1fr auto 1fr auto 1fr auto 1fr;gap:10px;align-items:center;margin-bottom:30px}
+    .design-flow .step{padding:14px 16px;background:#fff;border:1px solid var(--line);border-radius:7px;text-align:center}
+    .design-flow .step b{display:block;color:var(--navy);font:700 clamp(14px,13px + .3vw,16.5px)/1.3 var(--serif)}
+    .design-flow .step span{display:block;margin-top:4px;color:var(--muted);font-size:clamp(12px,11.5px + .15vw,13.5px)}
+    .design-flow .arrow{color:var(--blue);font-size:20px}
+    .design-table{width:100%;border-collapse:collapse;background:#fff;border:1px solid var(--line);border-radius:7px;overflow:hidden}
+    .design-table th,.design-table td{padding:14px 16px;text-align:left;vertical-align:top;border-bottom:1px solid var(--line);font-size:clamp(13px,12.5px + .2vw,15px);line-height:1.55}
+    .design-table th{background:var(--paper);color:var(--navy);font-weight:700;font-size:clamp(12px,11.5px + .15vw,13.5px);letter-spacing:.02em}
+    .design-table tr:last-child td{border-bottom:0}
+    .design-table td:first-child b{display:block;color:var(--navy);font:700 clamp(15px,14px + .3vw,17px)/1.3 var(--serif)}
+    .design-table td:first-child span{color:var(--blue);font-size:12.5px;font-weight:700}
+    .design-table td:nth-child(2){color:var(--ink);font-weight:600}
+    .design-table td:nth-child(3){color:var(--ink)}
+    .design-outcome{margin-top:22px;padding:18px 22px;background:var(--navy);color:#fff;border-radius:7px;display:grid;grid-template-columns:auto 1fr;gap:18px;align-items:center}
+    .design-outcome b{font:700 clamp(16px,15px + .4vw,20px)/1.3 var(--serif)}
+    .design-outcome span{color:#c9d6e6;font-size:clamp(13px,12.5px + .2vw,15px);line-height:1.6}
+    @media(max-width:860px){.design-flow{grid-template-columns:1fr}.design-flow .arrow{transform:rotate(90deg);justify-self:center;line-height:1}
+      .design-table thead{display:none}.design-table,.design-table tbody,.design-table tr,.design-table td{display:block;width:100%}
+      .design-table tr{border-bottom:1px solid var(--line)}.design-table tr:last-child{border-bottom:0}
+      .design-table td{border-bottom:0;padding:6px 16px}.design-table td:first-child{padding-top:16px}.design-table td:last-child{padding-bottom:16px}
+      .design-table td:nth-child(2):before{content:"Measured by · ";color:var(--muted);font-weight:400}
+      .design-table td:nth-child(3):before{content:"Designed through · ";color:var(--muted)}
+      .design-outcome{grid-template-columns:1fr}}
   </style>
 </head>
 <body>
@@ -130,6 +154,32 @@
         </div>
         <div class="threat-bar"><b>In one sentence</b><span>Use the physical layer to help protect individual data.</span></div>
       </div>
+    </div>
+  </section>
+
+  <section class="paper design-section" id="system-design">
+    <div class="wrap">
+      <div class="section-label-row"><h2 class="section-title">From Security Objectives to System Design</h2></div>
+      <p class="design-intro">Each research area is not only a security question but a <b>design problem</b>. We model the scenario and the channel, measure security with a concrete metric, find how system parameters change that metric, and then design and optimize the communication system around it.</p>
+      <div class="design-flow" aria-label="Design procedure">
+        <div class="step"><b>Scenario &amp; channel model</b><span>System, users, adversary, physics</span></div>
+        <div class="arrow" aria-hidden="true">→</div>
+        <div class="step"><b>Security metric</b><span>How secure is it, in numbers</span></div>
+        <div class="arrow" aria-hidden="true">→</div>
+        <div class="step"><b>Parameter–security relation</b><span>What moves the metric</span></div>
+        <div class="arrow" aria-hidden="true">→</div>
+        <div class="step"><b>Optimization &amp; design</b><span>Choose the parameters</span></div>
+      </div>
+      <table class="design-table">
+        <thead><tr><th>Research area</th><th>Measured by</th><th>Designed through</th></tr></thead>
+        <tbody>
+          <tr><td><span>01 · Existence</span><b>Covert Communication</b></td><td>Detection error probability (DEP), covert rate</td><td>Power allocation, relay placement, RIS phase, user selection</td></tr>
+          <tr><td><span>02 · Authenticity</span><b>Physical-Layer Authentication</b></td><td>False-alarm and missed-detection probabilities (P<sub>fa</sub>, P<sub>md</sub>)</td><td>Feature combination, threshold design, challenge design</td></tr>
+          <tr><td><span>03 · Secret Key</span><b>Physical-Layer Key Generation</b></td><td>Key generation rate (KGR), key disagreement rate (KDR)</td><td>Altitude, speed, RIS, probing rate, frequency band</td></tr>
+          <tr><td><span>04 · Data Privacy</span><b>Physical-Layer-Aided Differential Privacy</b></td><td>(ε, δ)-differential privacy, learning utility</td><td>Power control, beamforming, user scheduling, artificial noise, over-the-air aggregation</td></tr>
+        </tbody>
+      </table>
+      <div class="design-outcome"><b>Secure communication system design</b><span>Cellular and Wi-Fi networks · UAV, satellite, and maritime platforms · distributed and physical AI systems. The same physical-layer principles apply across RF, acoustic, optical, and wired media.</span></div>
     </div>
   </section>
 </main>
