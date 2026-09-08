@@ -249,3 +249,7 @@ section{padding:70px 0}
 .topline{display:none}
 @media(max-width:560px){.section-title{font-size:24px}}
 
+/* Open positions — Korean and English on their own lines, no grey */
+.openings-section .theme p{color:var(--ink);font-size:16px;line-height:1.7}
+.openings-section .opening-strip p{color:var(--ink);font-size:15px;line-height:1.7}
+
