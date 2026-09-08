@@ -7,9 +7,10 @@
   <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png?v=2"><link rel="icon" type="image/png" sizes="64x64" href="assets/img/favicon-64.png?v=2"><link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png?v=2"><title>ROOT Lab — Root of Trust from the Physical Layer</title>
   <link rel="stylesheet" href="styles.css?v=20260908-lm24">
   <style>
-    .home-hero{position:relative;overflow:hidden;background:#061629;color:#fff;padding:0;min-height:min(36.4vw,500px);display:flex;align-items:center}
+    .home-hero{position:relative;overflow:hidden;background:#061629;color:#fff;padding:0;min-height:min(36.4vw,460px);display:flex;align-items:center}
     .home-hero:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(4,17,34,.97) 0%,rgba(4,17,34,.92) 21%,rgba(4,17,34,.62) 38%,rgba(4,17,34,.18) 58%,rgba(4,17,34,.03) 100%);z-index:1;mask-image:none}
     .home-hero:after{content:"";position:absolute;inset:0;background:url('assets/img/root-hero3-1920.jpg') center center/cover no-repeat;z-index:0}
+    @media(min-width:1300px){.home-hero:after{left:50%;width:1264px;transform:translateX(-50%);-webkit-mask-image:linear-gradient(90deg,transparent 0,#000 10%,#000 90%,transparent 100%);mask-image:linear-gradient(90deg,transparent 0,#000 10%,#000 90%,transparent 100%)}}
     .home-hero .hero-grid{position:relative;z-index:2;width:min(1180px,calc(100% - 48px));margin:auto;display:block}
     .hero-copy{max-width:min(560px,60%);padding:clamp(24px,3.5vw,56px) 0}
     .home-hero h1{margin:0 0 .18em;font:600 clamp(38px,5vw,72px)/.96 var(--serif);letter-spacing:-.055em;text-shadow:0 3px 24px rgba(0,0,0,.28)}
