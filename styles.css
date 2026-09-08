@@ -264,3 +264,7 @@ section{padding:70px 0}
 .section-label-row{margin-bottom:18px}
 .home-news-list{margin-top:0}
 
+/* Apply / gallery strips — no accent bar or panel, a bold heading instead */
+.opening-strip{border-left:0;background:transparent;padding:24px 0 0}
+.opening-strip h3{font-weight:700}
+
