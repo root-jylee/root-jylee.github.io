@@ -252,4 +252,6 @@ section{padding:70px 0}
 /* Open positions — Korean and English on their own lines, no grey */
 .openings-section .theme p{color:var(--ink);font-size:16px;line-height:1.7}
 .openings-section .opening-strip p{color:var(--ink);font-size:15px;line-height:1.7}
+.openings-section .theme{grid-template-columns:132px 1fr}
+.openings-section .theme b{white-space:nowrap}
 
