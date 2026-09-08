@@ -8,11 +8,10 @@
   <link rel="stylesheet" href="styles.css?v=20260908-lm24">
   <style>
     .research-intro{max-width:920px;margin:0 auto 34px;color:#435066;font-size:17px;line-height:1.8}
-    .principle-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:28px}
-    .principle-card{padding:24px;background:#fff;border:1px solid var(--line);border-radius:7px}
-    .principle-card span{display:block;color:var(--blue);font-size:11px;font-weight:800;letter-spacing:.08em;text-transform:uppercase}
-    .principle-card h3{margin:22px 0 8px;font:500 23px/1.15 var(--serif)}
-    .principle-card p{margin:0;color:var(--muted);font-size:13px}
+    .overview-lead{max-width:940px;margin:0 auto 26px;color:#435066;font-size:17px;line-height:1.75}
+    .overview-lead b{color:#14233a}
+    .overview-figure{margin:28px auto 0;max-width:1120px}.overview-figure img{display:block;width:100%;height:auto}
+    .overview-caption{max-width:880px;margin:18px auto 0;text-align:center;color:var(--muted);font-size:13px;line-height:1.6}
     .resource-grid{display:grid;grid-template-columns:repeat(2,1fr);border-top:1px solid var(--line);border-left:1px solid var(--line);margin-top:28px}
     .resource-card{padding:24px;background:#fff;border-right:1px solid var(--line);border-bottom:1px solid var(--line)}
     .resource-card b{display:block;margin-bottom:6px;font-size:16px}.resource-card p{margin:0;color:var(--muted);font-size:13px}
@@ -20,8 +19,8 @@
     .research-note{margin-top:24px;padding:18px 20px;border-left:4px solid var(--blue);background:#fff;color:#435066;font-size:14px}
     .domain-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:26px}.domain-card{padding:26px;background:#fff;border:1px solid var(--line);border-radius:7px}.domain-card h3{margin:0 0 10px;font:500 23px var(--serif)}.domain-card p{margin:0;color:var(--muted);font-size:13px}
     .media-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:22px}.media-card{padding:20px;border:1px solid var(--line);border-radius:7px;background:#fff}.media-card b{display:block;margin-bottom:6px}.media-card p{margin:0;color:var(--muted);font-size:12px}
-    @media(max-width:900px){.principle-grid,.domain-grid,.media-grid{grid-template-columns:1fr 1fr}.resource-grid{grid-template-columns:1fr}}
-    @media(max-width:600px){.principle-grid,.domain-grid,.media-grid{grid-template-columns:1fr}}
+    @media(max-width:900px){.domain-grid,.media-grid{grid-template-columns:1fr 1fr}.resource-grid{grid-template-columns:1fr}}
+    @media(max-width:600px){.domain-grid,.media-grid{grid-template-columns:1fr}.overview-lead{font-size:16px}.overview-caption{text-align:left}}
   </style>
 </head>
 <body>
@@ -31,26 +30,13 @@
 <main>
   <div class="page-hero"><div class="wrap"><h1 class="page-title">Research</h1><p>From physical and statistical structure to secure communication-system design</p></div></div>
 
-  <section class="paper" id="research-philosophy">
+  <section class="paper research-overview-section" id="research-overview">
     <div class="wrap">
-      <div class="section-label-row"><h2 class="section-title">Research Philosophy · 연구 철학</h2></div>
-      <p class="research-intro">ROOT Lab studies the physical and statistical structure of communication systems and uses — or deliberately controls — the resulting <b>distinguishability, randomness, asymmetry, and uncertainty</b> to establish security. We connect these physical-layer resources to resource allocation, system parameters, protocols, and communication-system design and optimization.</p>
-      <div class="principle-grid">
-        <div class="principle-card"><span>01 · Covert</span><h3>Reduce Distinguishability</h3><p>Hide whether communication is taking place.</p></div>
-        <div class="principle-card"><span>02 · PLA</span><h3>Exploit Distinguishability</h3><p>Verify whether a signal or transmitter is legitimate.</p></div>
-        <div class="principle-card"><span>03 · PLKG</span><h3>Shared Randomness &amp; Asymmetry</h3><p>Establish a shared secret from physical observations.</p></div>
-        <div class="principle-card"><span>04 · PHY-Aided DP</span><h3>Control Distinguishability</h3><p>Limit inference about an individual's data or update.</p></div>
-      </div>
+      <div class="section-label-row"><h2 class="section-title">Research Philosophy &amp; Overview · 연구 철학 및 개요</h2></div>
+      <p class="overview-lead">ROOT Lab studies how the <b>physical and statistical structure of communication systems</b> creates distinguishability, randomness, asymmetry, and uncertainty — and how those properties can be <b>exploited or controlled to establish security</b>. We then connect them to system parameters, resource allocation, protocols, and communication-system design.</p>
+      <figure class="overview-figure"><img src="assets/img/research-overview-axes.svg?v=20260908" alt="ROOT Lab research philosophy and four core research axes: covert communication, physical-layer authentication, physical-layer key generation, and physical-layer-aided differential privacy"></figure>
+      <p class="overview-caption">The four axes are the security problems we study. Fingerprinting, challenge–response, beamforming, cooperation, optimization, machine learning, OTA/AirComp, and related techniques are methods used across these problems, not separate research axes.</p>
       <div class="research-note"><b>Long-term extension.</b> ROOT Lab currently centers on classical communication systems. Quantum communication security is a future extension, with PLKG → QKD as a natural starting point.</div>
-    </div>
-  </section>
-
-  <section class="research-visual-section research-overview-section" id="research-overview">
-    <div class="wrap">
-      <div class="section-label-row"><h2 class="section-title">Research Overview · 연구 개요</h2></div>
-      <figure class="research-figure framework-figure"><img src="assets/img/research-framework.svg?v=20260825" alt="ROOT Lab research framework connecting security objectives, physical-layer resources, methods, and communication systems"></figure>
-      <figure class="research-figure systems-figure"><img src="assets/img/research-systems.svg?v=20260825" alt="Representative ROOT Lab communication systems and application domains"></figure>
-      <p class="research-intro" style="margin-top:28px">The four research axes below are the <b>security problems we solve</b>. Fingerprinting, challenge–response, beamforming, cooperation, optimization, machine learning, over-the-air aggregation, and related techniques are <b>methods used to solve those problems</b> rather than independent research axes.</p>
     </div>
   </section>
 
