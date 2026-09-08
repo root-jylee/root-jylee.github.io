@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8"><meta name="color-scheme" content="only light">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="ROOT Lab research philosophy and four core research areas in physical-layer security">
+  <meta name="description" content="ROOT Lab research overview and four core research areas in physical-layer security">
   <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png?v=4"><link rel="icon" type="image/png" sizes="64x64" href="assets/img/favicon-64.png?v=4"><link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png?v=4"><title>Research — ROOT Lab</title>
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="ROOT Lab">
@@ -19,47 +19,22 @@
   <meta name="twitter:image" content="https://root-jylee.github.io/assets/img/og-image.png?v=3">
   <link rel="stylesheet" href="styles.css?v=20260908-lm24">
   <style>
-    .overview-lead{max-width:940px;margin:0 0 30px;color:var(--ink);font-size:clamp(15px,14px + .3vw,17.5px);line-height:1.75}
-    .overview-lead b{color:var(--navy)}
-    .phil-flow{display:grid;grid-template-columns:1fr auto 1fr auto 1fr;align-items:stretch;gap:12px;margin-bottom:34px}
-    .phil-step{padding:18px 20px;background:#fff;border:1px solid var(--line);border-radius:7px}
-    .phil-step b{display:block;margin-bottom:6px;color:var(--navy);font:700 clamp(16px,14px + .4vw,19px)/1.3 var(--serif)}
-    .phil-step span{color:var(--muted);font-size:clamp(12.5px,12px + .15vw,14px);line-height:1.5}
-    .phil-arrow{align-self:center;color:var(--blue);font-size:22px}
-    .axes-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
-    .axis-card{display:flex;flex-direction:column;padding:22px 24px;background:#fff;border:1px solid var(--line);border-radius:7px;color:var(--ink);transition:.2s ease}
-    .axis-card:hover,.axis-card:focus-visible{border-color:var(--navy);transform:translateY(-3px);outline:none}
-    .axis-tag{color:var(--blue);font-size:clamp(12px,11px + .15vw,13px);font-weight:700;letter-spacing:.02em}
-    .axis-card h3{margin:10px 0 6px;font:700 clamp(19px,16px + .6vw,24px)/1.2 var(--serif);letter-spacing:-.01em}
-    .axis-principle{margin:0 0 8px;color:var(--navy);font-weight:700;font-size:clamp(14px,13px + .2vw,15.5px)}
-    .axis-q{margin:0 0 16px;font-style:italic;color:var(--ink);font-size:clamp(14px,13px + .2vw,15.5px);line-height:1.55}
-    .axis-chip{margin-top:auto;align-self:flex-start;padding:5px 12px;border-radius:999px;background:var(--paper);border:1px solid var(--line);color:var(--navy);font-size:12.5px;font-weight:700}
-    @media(max-width:760px){.phil-flow{grid-template-columns:1fr}.phil-arrow{transform:rotate(90deg);justify-self:center;line-height:1}}
-    @media(max-width:640px){.axes-grid{grid-template-columns:1fr}}
     .design-intro{max-width:940px;margin:0 0 26px;color:var(--ink);font-size:clamp(15px,14px + .3vw,17.5px);line-height:1.75}
+    .design-intro b{color:var(--navy)}
     .design-flow{display:grid;grid-template-columns:1fr auto 1fr auto 1fr auto 1fr;gap:10px;align-items:center;margin-bottom:30px}
     .design-flow .step{padding:14px 16px;background:#fff;border:1px solid var(--line);border-radius:7px;text-align:center}
     .design-flow .step b{display:block;color:var(--navy);font:700 clamp(14px,13px + .3vw,16.5px)/1.3 var(--serif)}
     .design-flow .step span{display:block;margin-top:4px;color:var(--muted);font-size:clamp(12px,11.5px + .15vw,13.5px)}
     .design-flow .arrow{color:var(--blue);font-size:20px}
-    .design-table{width:100%;border-collapse:collapse;background:#fff;border:1px solid var(--line);border-radius:7px;overflow:hidden}
-    .design-table th,.design-table td{padding:14px 16px;text-align:left;vertical-align:top;border-bottom:1px solid var(--line);font-size:clamp(13px,12.5px + .2vw,15px);line-height:1.55}
-    .design-table th{background:var(--paper);color:var(--navy);font-weight:700;font-size:clamp(12px,11.5px + .15vw,13.5px);letter-spacing:.02em}
-    .design-table tr:last-child td{border-bottom:0}
-    .design-table td:first-child b{display:block;color:var(--navy);font:700 clamp(15px,14px + .3vw,17px)/1.3 var(--serif)}
-    .design-table td:first-child span{color:var(--blue);font-size:12.5px;font-weight:700}
-    .design-table td:nth-child(2){color:var(--ink);font-weight:600}
-    .design-table td:nth-child(3){color:var(--ink)}
+    .systems-figure{margin:0;width:100%;max-width:none;padding:0;border:1px solid var(--line);border-radius:7px;overflow:hidden;background:#fff}
+    .systems-figure svg{display:block;width:100%;height:auto}
+    .systems-legend{display:none;list-style:none;margin:12px 0 0;padding:0;gap:8px;flex-wrap:wrap}
+    .systems-legend li{padding:5px 12px;border:1px solid var(--line);border-radius:999px;background:#fff;color:var(--navy);font-size:12.5px;font-weight:700}
     .design-outcome{margin-top:22px;padding:18px 22px;background:var(--navy);color:#fff;border-radius:7px;display:grid;grid-template-columns:auto 1fr;gap:18px;align-items:center}
     .design-outcome b{font:700 clamp(16px,15px + .4vw,20px)/1.3 var(--serif)}
     .design-outcome span{color:#c9d6e6;font-size:clamp(13px,12.5px + .2vw,15px);line-height:1.6}
-    @media(max-width:860px){.design-flow{grid-template-columns:1fr}.design-flow .arrow{transform:rotate(90deg);justify-self:center;line-height:1}
-      .design-table thead{display:none}.design-table,.design-table tbody,.design-table tr,.design-table td{display:block;width:100%}
-      .design-table tr{border-bottom:1px solid var(--line)}.design-table tr:last-child{border-bottom:0}
-      .design-table td{border-bottom:0;padding:6px 16px}.design-table td:first-child{padding-top:16px}.design-table td:last-child{padding-bottom:16px}
-      .design-table td:nth-child(2):before{content:"Measured by · ";color:var(--muted);font-weight:400}
-      .design-table td:nth-child(3):before{content:"Designed through · ";color:var(--muted)}
-      .design-outcome{grid-template-columns:1fr}}
+    @media(max-width:860px){.design-flow{grid-template-columns:1fr}.design-flow .arrow{transform:rotate(90deg);justify-self:center;line-height:1}.design-outcome{grid-template-columns:1fr}}
+    @media(max-width:640px){.svg-label{display:none}.systems-legend{display:flex}}
   </style>
 </head>
 <body>
@@ -71,27 +46,90 @@
 
   <section class="paper research-overview-section" id="research-overview">
     <div class="wrap">
-      <div class="section-label-row"><h2 class="section-title">Research Philosophy &amp; Overview</h2></div>
-      <p class="overview-lead">Every communication signal is affected by the <b>channel, noise, hardware, location, and motion</b> around it. These effects leave physical clues in the received signal. ROOT Lab studies how those clues can be used to make communication <b>harder to detect, easier to authenticate, safer for key generation, and more private.</b></p>
-      <div class="phil-flow" aria-label="Research philosophy">
-        <div class="phil-step"><b>Physical / Statistical Structure</b><span>Channel · Noise · Device · Geometry · Mobility</span></div>
-        <div class="phil-arrow" aria-hidden="true">→</div>
-        <div class="phil-step"><b>Security-Relevant Properties</b><span>Distinguishability · Randomness · Asymmetry · Uncertainty</span></div>
-        <div class="phil-arrow" aria-hidden="true">→</div>
-        <div class="phil-step"><b>Secure System Design</b><span>Exploit or control physical structure for security</span></div>
+      <div class="section-label-row"><h2 class="section-title">Overview</h2></div>
+      <p class="design-intro">Each research area is not only a security question but a <b>design problem</b>. We model the scenario and the channel, measure security with a concrete metric, find how system parameters change that metric, and then design and optimize the communication system around it.</p>
+      <div class="design-flow" aria-label="Design procedure">
+        <div class="step"><b>Scenario &amp; channel model</b><span>System, users, adversary, physics</span></div>
+        <div class="arrow" aria-hidden="true">→</div>
+        <div class="step"><b>Security metric</b><span>How secure is it, in numbers</span></div>
+        <div class="arrow" aria-hidden="true">→</div>
+        <div class="step"><b>Parameter–security relation</b><span>What moves the metric</span></div>
+        <div class="arrow" aria-hidden="true">→</div>
+        <div class="step"><b>Optimization &amp; design</b><span>Choose the parameters</span></div>
       </div>
-      <div class="axes-grid" aria-label="Four core research areas">
-        <a class="axis-card" href="#covert-communication"><span class="axis-tag">01 · Existence</span><h3>Covert Communication</h3><p class="axis-principle">Reduce distinguishability</p><p class="axis-q">Can communication be hidden?</p><span class="axis-chip">Noise · Interference</span></a>
-        <a class="axis-card" href="#authentication"><span class="axis-tag">02 · Authenticity</span><h3>Physical-Layer Authentication</h3><p class="axis-principle">Exploit distinguishability</p><p class="axis-q">Can a transmitter be trusted?</p><span class="axis-chip">Device · Mobility</span></a>
-        <a class="axis-card" href="#key-generation"><span class="axis-tag">03 · Secret Key</span><h3>Physical-Layer Key Generation</h3><p class="axis-principle">Shared randomness &amp; asymmetry</p><p class="axis-q">Can two devices create a shared secret?</p><span class="axis-chip">Reciprocity · Fading</span></a>
-        <a class="axis-card" href="#differential-privacy"><span class="axis-tag">04 · Data Privacy</span><h3>Physical-Layer-Aided Differential Privacy</h3><p class="axis-principle">Control distinguishability</p><p class="axis-q">Can private data remain difficult to infer?</p><span class="axis-chip">Noise · Superposition</span></a>
-      </div>
+      <figure class="systems-figure" aria-label="Communication systems studied at ROOT Lab">
+        <svg viewBox="0 0 1120 440" xmlns="http://www.w3.org/2000/svg" role="img">
+          <title>Satellite, UAV, terrestrial, and underwater communication systems</title>
+          <defs>
+            <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#eaf1fb"/><stop offset="1" stop-color="#f7fafd"/></linearGradient>
+            <linearGradient id="sea" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#cfe0f2"/><stop offset="1" stop-color="#9dbbd9"/></linearGradient>
+          </defs>
+          <rect x="0" y="0" width="1120" height="300" fill="url(#sky)"/>
+          <path d="M0 300 L0 440 L640 440 L640 300 Q560 268 470 292 Q380 300 300 288 Q160 272 0 300 Z" fill="#efeadc"/>
+          <path d="M640 300 Q680 292 720 300 T800 300 T880 300 T960 300 T1040 300 T1120 300 L1120 440 L640 440 Z" fill="url(#sea)"/>
+          <path d="M640 300 Q680 292 720 300 T800 300 T880 300 T960 300 T1040 300 T1120 300" fill="none" stroke="#6f93b8" stroke-width="2"/>
+          <!-- links -->
+          <g fill="none" stroke="#3f6fa8" stroke-width="2" stroke-dasharray="7 6" opacity=".85">
+            <path d="M935 92 L585 182"/><path d="M955 96 L835 276"/><path d="M365 150 L540 190"/><path d="M585 200 L820 282"/>
+          </g>
+          <g fill="none" stroke="#b8302f" stroke-width="2" stroke-dasharray="4 5" opacity=".9"><path d="M735 236 L610 200"/><path d="M735 236 L815 282"/></g>
+          <!-- satellite -->
+          <g transform="translate(960,70)">
+            <rect x="-24" y="-16" width="48" height="32" rx="4" fill="#0b2a4d"/>
+            <rect x="-92" y="-9" width="60" height="18" fill="#3f6fa8"/><rect x="32" y="-9" width="60" height="18" fill="#3f6fa8"/>
+            <path d="M-92 -9 v18 M-77 -9 v18 M-62 -9 v18 M-47 -9 v18 M47 -9 v18 M62 -9 v18 M77 -9 v18" stroke="#eaf1fb" stroke-width="1.5"/>
+            <circle cx="0" cy="24" r="6" fill="#e0b13a"/>
+            <path d="M-40 52 Q0 36 40 52" fill="none" stroke="#3f6fa8" stroke-width="2"/><path d="M-26 62 Q0 50 26 62" fill="none" stroke="#3f6fa8" stroke-width="2"/>
+          </g>
+          <!-- UAV -->
+          <g transform="translate(330,140)">
+            <path d="M-30 -18 L30 18 M30 -18 L-30 18" stroke="#0b2a4d" stroke-width="4" stroke-linecap="round"/>
+            <ellipse cx="-34" cy="-20" rx="20" ry="5" fill="none" stroke="#0b2a4d" stroke-width="3"/><ellipse cx="34" cy="-20" rx="20" ry="5" fill="none" stroke="#0b2a4d" stroke-width="3"/>
+            <ellipse cx="-34" cy="20" rx="20" ry="5" fill="none" stroke="#0b2a4d" stroke-width="3"/><ellipse cx="34" cy="20" rx="20" ry="5" fill="none" stroke="#0b2a4d" stroke-width="3"/>
+            <rect x="-16" y="-9" width="32" height="18" rx="6" fill="#0b2a4d"/><circle cx="0" cy="0" r="4" fill="#e0b13a"/>
+          </g>
+          <!-- terrestrial: city + base station -->
+          <g fill="#c9d3e0">
+            <rect x="420" y="232" width="26" height="60"/><rect x="452" y="212" width="34" height="80"/><rect x="492" y="242" width="22" height="50"/><rect x="606" y="226" width="30" height="66"/>
+          </g>
+          <g fill="#eef4fb"><rect x="458" y="222" width="6" height="6"/><rect x="470" y="222" width="6" height="6"/><rect x="458" y="238" width="6" height="6"/><rect x="470" y="238" width="6" height="6"/><rect x="612" y="236" width="6" height="6"/><rect x="624" y="236" width="6" height="6"/></g>
+          <g transform="translate(560,292)">
+            <path d="M-16 0 L-6 -112 L6 -112 L16 0 Z" fill="#0b2a4d"/><path d="M-13 -30 H13 M-10 -60 H10 M-8 -84 H8" stroke="#eef4fb" stroke-width="2"/>
+            <rect x="-22" y="-124" width="8" height="22" rx="2" fill="#3f6fa8"/><rect x="14" y="-124" width="8" height="22" rx="2" fill="#3f6fa8"/><rect x="-4" y="-130" width="8" height="26" rx="2" fill="#3f6fa8"/>
+            <path d="M-38 -128 Q-30 -112 -38 -96" fill="none" stroke="#3f6fa8" stroke-width="2"/><path d="M38 -128 Q30 -112 38 -96" fill="none" stroke="#3f6fa8" stroke-width="2"/>
+          </g>
+          <!-- adversary -->
+          <g transform="translate(735,236)">
+            <path d="M-8 22 L0 -6 L8 22 Z" fill="#b8302f"/><circle cx="0" cy="-12" r="6" fill="none" stroke="#b8302f" stroke-width="2.5"/>
+            <path d="M-16 -22 Q-10 -12 -16 -2" fill="none" stroke="#b8302f" stroke-width="2"/><path d="M16 -22 Q10 -12 16 -2" fill="none" stroke="#b8302f" stroke-width="2"/>
+          </g>
+          <!-- surface vessel -->
+          <g transform="translate(830,290)">
+            <path d="M-46 0 L-36 16 L36 16 L50 0 Z" fill="#0b2a4d"/><rect x="-16" y="-16" width="30" height="16" fill="#3f6fa8"/><path d="M4 -16 V-34" stroke="#0b2a4d" stroke-width="3"/>
+          </g>
+          <!-- underwater vehicle + acoustic waves -->
+          <g fill="none" stroke="#0b2a4d" stroke-width="2" opacity=".75"><path d="M806 322 Q830 336 854 322"/><path d="M796 340 Q830 360 864 340"/><path d="M786 358 Q830 384 874 358"/></g>
+          <g transform="translate(940,395)">
+            <ellipse cx="0" cy="0" rx="46" ry="14" fill="#0b2a4d"/><path d="M-46 0 L-62 -12 L-62 12 Z" fill="#0b2a4d"/><rect x="-8" y="-24" width="16" height="12" rx="2" fill="#0b2a4d"/><circle cx="22" cy="-3" r="4" fill="#e0b13a"/>
+          </g>
+          <!-- labels -->
+          <g class="svg-label" font-family="Latin Modern, Georgia, serif" font-size="21" fill="#10213b" text-anchor="middle">
+            <text x="960" y="170">Satellite / NTN</text>
+            <text x="330" y="206">UAV</text>
+            <text x="520" y="330">Terrestrial</text>
+            <text x="735" y="282" fill="#b8302f" font-size="17">Adversary</text>
+            <text x="960" y="432">Underwater acoustic</text>
+          </g>
+        </svg>
+      </figure>
+      <ul class="systems-legend" aria-hidden="true"><li>Satellite / NTN</li><li>UAV</li><li>Terrestrial</li><li>Underwater acoustic</li></ul>
+      <div class="design-outcome"><b>Secure communication system design</b><span>Satellite, UAV, terrestrial, and underwater acoustic systems studied so far. The same physical-layer principles apply across RF, acoustic, optical, and wired media.</span></div>
     </div>
   </section>
 
   <section class="architecture-section" id="covert-communication">
     <div class="wrap architecture">
-      <div class="architecture-copy"><span class="architecture-index">01 · Existence</span><h2>Covert Communication</h2><dl><div><dt>Question</dt><dd>Can communication take place without an observer easily noticing that it happened?</dd></div><div><dt>Physical clue</dt><dd>Noise, interference, and uncertainty can make a weak transmission harder to distinguish from the background.</dd></div><div><dt>Goal</dt><dd>Communicate reliably while keeping the transmission difficult to detect.</dd></div></dl></div>
+      <div class="architecture-copy"><span class="architecture-index">01 · Existence</span><h2>Covert Communication</h2><dl><div><dt>Question</dt><dd>Can communication take place without an observer easily noticing that it happened?</dd></div><div><dt>Physical clue</dt><dd>Noise, interference, and uncertainty can make a weak transmission harder to distinguish from the background.</dd></div><div><dt>Goal</dt><dd>Communicate reliably while keeping the transmission difficult to detect.</dd></div><div><dt>Measured by</dt><dd>Detection error probability (DEP), covert rate</dd></div><div><dt>Designed through</dt><dd>Power allocation, relay placement, RIS phase, user selection</dd></div></dl></div>
       <div class="arch-panel">
         <div class="arch-label">Basic idea</div>
         <div class="arch-flow">
@@ -108,7 +146,7 @@
 
   <section class="paper architecture-section" id="authentication">
     <div class="wrap architecture">
-      <div class="architecture-copy"><span class="architecture-index">02 · Authenticity</span><h2>Physical-Layer Authentication</h2><dl><div><dt>Question</dt><dd>Is this signal really coming from the device or transmitter it claims to come from?</dd></div><div><dt>Physical clue</dt><dd>Hardware, channel, location, speed, and direction can leave distinctive traces on a received signal.</dd></div><div><dt>Goal</dt><dd>Use those traces as physical evidence to distinguish legitimate signals from forged ones.</dd></div></dl></div>
+      <div class="architecture-copy"><span class="architecture-index">02 · Authenticity</span><h2>Physical-Layer Authentication</h2><dl><div><dt>Question</dt><dd>Is this signal really coming from the device or transmitter it claims to come from?</dd></div><div><dt>Physical clue</dt><dd>Hardware, channel, location, speed, and direction can leave distinctive traces on a received signal.</dd></div><div><dt>Goal</dt><dd>Use those traces as physical evidence to distinguish legitimate signals from forged ones.</dd></div><div><dt>Measured by</dt><dd>False-alarm and missed-detection probabilities (P<sub>fa</sub>, P<sub>md</sub>)</dd></div><div><dt>Designed through</dt><dd>Feature combination, threshold design, challenge design</dd></div></dl></div>
       <div class="arch-panel">
         <div class="arch-label">Basic idea</div>
         <div class="arch-flow">
@@ -125,7 +163,7 @@
 
   <section class="architecture-section" id="key-generation">
     <div class="wrap architecture">
-      <div class="architecture-copy"><span class="architecture-index">03 · Secret Key</span><h2>Physical-Layer Key Generation</h2><dl><div><dt>Question</dt><dd>Can two communicating devices create the same secret without sending the secret itself?</dd></div><div><dt>Physical clue</dt><dd>Two devices connected by the same wireless channel can observe similar random variations that another device sees differently.</dd></div><div><dt>Goal</dt><dd>Turn shared channel randomness into a common secret key.</dd></div></dl></div>
+      <div class="architecture-copy"><span class="architecture-index">03 · Secret Key</span><h2>Physical-Layer Key Generation</h2><dl><div><dt>Question</dt><dd>Can two communicating devices create the same secret without sending the secret itself?</dd></div><div><dt>Physical clue</dt><dd>Two devices connected by the same wireless channel can observe similar random variations that another device sees differently.</dd></div><div><dt>Goal</dt><dd>Turn shared channel randomness into a common secret key.</dd></div><div><dt>Measured by</dt><dd>Key generation rate (KGR), key disagreement rate (KDR)</dd></div><div><dt>Designed through</dt><dd>Altitude, speed, RIS, probing rate, frequency band</dd></div></dl></div>
       <div class="arch-panel">
         <div class="arch-label">Basic idea</div>
         <div class="arch-flow">
@@ -142,7 +180,7 @@
 
   <section class="paper architecture-section" id="differential-privacy">
     <div class="wrap architecture">
-      <div class="architecture-copy"><span class="architecture-index">04 · Data Privacy</span><h2>Physical-Layer-Aided Differential Privacy</h2><dl><div><dt>Question</dt><dd>Can a communication system learn from many users without revealing too much about any one user?</dd></div><div><dt>Physical clue</dt><dd>Wireless noise and the natural mixing of transmitted signals can help hide the contribution of an individual user.</dd></div><div><dt>Goal</dt><dd>Use communication-layer effects together with privacy techniques to reduce individual-data inference.</dd></div></dl></div>
+      <div class="architecture-copy"><span class="architecture-index">04 · Data Privacy</span><h2>Physical-Layer-Aided Differential Privacy</h2><dl><div><dt>Question</dt><dd>Can a communication system learn from many users without revealing too much about any one user?</dd></div><div><dt>Physical clue</dt><dd>Wireless noise and the natural mixing of transmitted signals can help hide the contribution of an individual user.</dd></div><div><dt>Goal</dt><dd>Use communication-layer effects together with privacy techniques to reduce individual-data inference.</dd></div><div><dt>Measured by</dt><dd>(ε, δ)-differential privacy, learning utility</dd></div><div><dt>Designed through</dt><dd>Power control, beamforming, user scheduling, artificial noise, over-the-air aggregation</dd></div></dl></div>
       <div class="arch-panel">
         <div class="arch-label">Basic idea</div>
         <div class="arch-flow">
@@ -157,31 +195,6 @@
     </div>
   </section>
 
-  <section class="paper design-section" id="system-design">
-    <div class="wrap">
-      <div class="section-label-row"><h2 class="section-title">From Security Objectives to System Design</h2></div>
-      <p class="design-intro">Each research area is not only a security question but a <b>design problem</b>. We model the scenario and the channel, measure security with a concrete metric, find how system parameters change that metric, and then design and optimize the communication system around it.</p>
-      <div class="design-flow" aria-label="Design procedure">
-        <div class="step"><b>Scenario &amp; channel model</b><span>System, users, adversary, physics</span></div>
-        <div class="arrow" aria-hidden="true">→</div>
-        <div class="step"><b>Security metric</b><span>How secure is it, in numbers</span></div>
-        <div class="arrow" aria-hidden="true">→</div>
-        <div class="step"><b>Parameter–security relation</b><span>What moves the metric</span></div>
-        <div class="arrow" aria-hidden="true">→</div>
-        <div class="step"><b>Optimization &amp; design</b><span>Choose the parameters</span></div>
-      </div>
-      <table class="design-table">
-        <thead><tr><th>Research area</th><th>Measured by</th><th>Designed through</th></tr></thead>
-        <tbody>
-          <tr><td><span>01 · Existence</span><b>Covert Communication</b></td><td>Detection error probability (DEP), covert rate</td><td>Power allocation, relay placement, RIS phase, user selection</td></tr>
-          <tr><td><span>02 · Authenticity</span><b>Physical-Layer Authentication</b></td><td>False-alarm and missed-detection probabilities (P<sub>fa</sub>, P<sub>md</sub>)</td><td>Feature combination, threshold design, challenge design</td></tr>
-          <tr><td><span>03 · Secret Key</span><b>Physical-Layer Key Generation</b></td><td>Key generation rate (KGR), key disagreement rate (KDR)</td><td>Altitude, speed, RIS, probing rate, frequency band</td></tr>
-          <tr><td><span>04 · Data Privacy</span><b>Physical-Layer-Aided Differential Privacy</b></td><td>(ε, δ)-differential privacy, learning utility</td><td>Power control, beamforming, user scheduling, artificial noise, over-the-air aggregation</td></tr>
-        </tbody>
-      </table>
-      <div class="design-outcome"><b>Secure communication system design</b><span>Cellular and Wi-Fi networks · UAV, satellite, and maritime platforms · distributed and physical AI systems. The same physical-layer principles apply across RF, acoustic, optical, and wired media.</span></div>
-    </div>
-  </section>
 </main>
 
 <footer><div class="wrap"><div class="footer-grid"><div><div class="brand"><img class="mark-img" src="assets/img/emblem-128.png?v=4" alt="" width="38" height="38"><span>ROOT Lab</span></div><p>Secure Communications Lab @ CUK<br>Michael Hall T710, The Catholic University of Korea<br>43 Jibong-ro, Wonmi-gu, Bucheon 14662, Gyeonggi-do, Korea<br>Tel. +82-2-2164-4877</p></div><div><div class="footer-title">Navigate</div><a href="members.html">Members</a><a href="research.html">Research</a><a href="publications.html">Publications</a><a href="projects.html">Projects</a><a href="gallery.html">Gallery</a><a href="contact.html">Contact</a></div><div><div class="footer-title">Connect</div><a href="index.html#open-positions">Open positions</a><a href="contact.html">Contact</a><a class="github-link" href="https://github.com/root-jylee" target="_blank" rel="noopener noreferrer" aria-label="ROOT Lab GitHub organization"><svg viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M8 0C3.58 0 0 3.64 0 8.13c0 3.59 2.29 6.64 5.47 7.71.4.08.55-.18.55-.39 0-.19-.01-.82-.01-1.49-2.23.49-2.7-1.09-2.7-1.09-.36-.94-.88-1.19-.88-1.19-.72-.5.05-.49.05-.49.8.06 1.22.83 1.22.83.71 1.24 1.87.88 2.33.67.07-.52.28-.88.51-1.08-1.78-.21-3.65-.9-3.65-4.02 0-.89.31-1.62.82-2.19-.08-.21-.36-1.04.08-2.16 0 0 .67-.22 2.2.84A7.4 7.4 0 0 1 8 3.53c.68 0 1.36.09 2 .27 1.53-1.06 2.2-.84 2.2-.84.44 1.12.16 1.95.08 2.16.51.57.82 1.3.82 2.19 0 3.13-1.88 3.81-3.66 4.01.29.25.54.74.54 1.5 0 1.08-.01 1.95-.01 2.21 0 .22.14.47.55.39A8.03 8.03 0 0 0 16 8.13C16 3.64 12.42 0 8 0z"/></svg><span>GitHub Organization</span></a></div></div><div class="copyright"><span>© 2026 ROOT Lab. All rights reserved.</span><span>Root of Trust from the Physical Layer</span></div></div></footer>
