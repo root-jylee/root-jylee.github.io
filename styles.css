@@ -316,3 +316,7 @@ body{font-size:clamp(15px,14px + .28vw,17.5px)}
 .gallery-teaser-section .more-link{display:inline-block;margin-top:18px}
 @media(max-width:900px){.home-gallery-grid{grid-template-columns:repeat(3,1fr);gap:12px}}
 @media(max-width:560px){.home-gallery-grid{grid-template-columns:1fr 1fr}.home-gallery-item:nth-child(3){display:none}}
+.scope-top{display:flex;justify-content:space-between;align-items:baseline;gap:10px}
+.scope-abbr{color:var(--muted);font-size:clamp(11px,10.5px + .1vw,12px);font-weight:700;letter-spacing:.04em}
+.scope-card:hover .scope-abbr,.scope-card:focus-visible .scope-abbr{color:#b7c4d6}
+.scope-card p em{font-style:italic}
