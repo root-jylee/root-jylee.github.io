@@ -254,3 +254,13 @@ section{padding:70px 0}
 .openings-section .theme{grid-template-columns:132px 1fr}
 .openings-section .theme b{white-space:nowrap}
 
+/* Home — tighter vertical rhythm between sections */
+.about-section{padding:44px 0 40px}
+.about-lockup{margin-bottom:24px}
+.openings-section{padding:34px 0}
+.home-news-section{padding:44px 0}
+.research-summary-section{padding:44px 0}
+.gallery-teaser-section{padding:28px 0 52px}
+.section-label-row{margin-bottom:18px}
+.home-news-list{margin-top:0}
+
