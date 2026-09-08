@@ -320,3 +320,6 @@ body{font-size:clamp(15px,14px + .28vw,17.5px)}
 .scope-abbr{color:var(--muted);font-size:clamp(11px,10.5px + .1vw,12px);font-weight:700;letter-spacing:.04em}
 .scope-card:hover .scope-abbr,.scope-card:focus-visible .scope-abbr{color:#b7c4d6}
 .scope-card p em{font-style:italic}
+.member-section .section-title{margin-bottom:20px}
+.member-sections .member-section+.member-section{margin-top:40px;padding-top:36px;border-top:1px solid var(--line)}
+.member-empty{margin:0;color:var(--muted)}
