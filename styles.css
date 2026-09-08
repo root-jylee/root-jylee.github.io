@@ -293,3 +293,6 @@ body{font-size:clamp(15px,14px + .28vw,17.5px)}
 .home-news-item .news-card-link,.home-news-item .news-card-link span{font-size:clamp(12px,11px + .15vw,13px)}
 .scope-card .scope-num{font-size:clamp(12px,11px + .15vw,13px);letter-spacing:.02em;text-transform:none}
 .scope-card h3{margin-top:22px}
+.pi-role{line-height:1.5}
+.pi-contact{margin-bottom:26px}
+.pi-contact p a{color:var(--blue);font-weight:700}
