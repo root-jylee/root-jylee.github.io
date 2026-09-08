@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="description" content="ROOT Lab research scope and detailed physical-layer security architectures">
   <title>Research — ROOT Lab @ CUK</title>
-  <link rel="stylesheet" href="styles.css?v=20260901-16">
+  <link rel="stylesheet" href="styles.css?v=20260901-17">
 </head>
 <body>
 <div class="topline"></div>
@@ -41,6 +41,7 @@
         <span>Key Generation &amp; Private Learning</span>
         <span>Awareness-Driven Intelligent Security</span>
       </div>
+      <p class="overview-note">Long-term extension: quantum communication security, starting from PLKG toward QKD.</p>
     </div>
   </section>
 
@@ -103,7 +104,7 @@
 
   <section class="paper architecture-section" id="differential-privacy">
     <div class="wrap architecture">
-      <div class="architecture-copy"><span class="architecture-index">04 · Privacy</span><h2>Differential Privacy</h2><dl><div><dt>Adversary question</dt><dd>Individual data exposure</dd></div><div><dt>Physical resources</dt><dd>Wireless superposition · Aggregation · Channel noise · Power control</dd></div><div><dt>Trust outcome</dt><dd>Global model utility · Privacy budget ε</dd></div></dl></div>
+      <div class="architecture-copy"><span class="architecture-index">04 · Privacy</span><h2>Physical-Layer-Aided Differential Privacy</h2><dl><div><dt>Adversary question</dt><dd>Individual data exposure</dd></div><div><dt>Physical resources</dt><dd>Channel noise · Randomness · OTA aggregation · Power control</dd></div><div><dt>Trust outcome</dt><dd>Learning utility · (ε,δ)-DP guarantee</dd></div></dl></div>
       <div class="arch-panel">
         <div class="arch-label">System architecture</div>
         <div class="arch-flow">
@@ -113,7 +114,7 @@
           <div class="arch-arrow" aria-hidden="true">→</div>
           <div class="arch-node"><span>03 · OTA aggregation</span><b>Wireless superposition</b><small>Aggregate without raw updates</small></div>
           <div class="arch-arrow" aria-hidden="true">→</div>
-          <div class="arch-node output"><span>04 · Output</span><b>Private global model</b><small>Utility + privacy budget ε</small></div>
+          <div class="arch-node output"><span>04 · Output</span><b>Private global model</b><small>Learning utility + (ε,δ)-DP</small></div>
         </div>
         <div class="threat-bar"><b>Threat model</b><span>Observer / Aggregator · Participation inference · Record inference</span></div>
       </div>
@@ -121,6 +122,6 @@
   </section>
 </main>
 
-<footer><div class="wrap"><div class="footer-grid"><div><div class="brand"><span class="mark">R</span><span>ROOT Lab</span></div><p>Physical Layer Security for Communication Systems<br>The Catholic University of Korea</p></div><div><div class="footer-title">Navigate</div><a href="index.html">Home</a><a href="publications.html">Publications</a><a href="members.html">Members</a><a href="projects.html">Projects</a><a href="gallery.html">Gallery</a></div><div><div class="footer-title">Connect</div><a href="mailto:jylee120@catholic.ac.kr">jylee120@catholic.ac.kr</a><a href="contact.html">Contact</a><a class="github-link" href="https://github.com/root-jylee" target="_blank" rel="noopener noreferrer" aria-label="ROOT Lab GitHub organization"><svg viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M8 0C3.58 0 0 3.64 0 8.13c0 3.59 2.29 6.64 5.47 7.71.4.08.55-.18.55-.39 0-.19-.01-.82-.01-1.49-2.23.49-2.7-1.09-2.7-1.09-.36-.94-.88-1.19-.88-1.19-.72-.5.05-.49.05-.49.8.06 1.22.83 1.22.83.71 1.24 1.87.88 2.33.67.07-.52.28-.88.51-1.08-1.78-.21-3.65-.9-3.65-4.02 0-.89.31-1.62.82-2.19-.08-.21-.36-1.04.08-2.16 0 0 .67-.22 2.2.84A7.4 7.4 0 0 1 8 3.53c.68 0 1.36.09 2 .27 1.53-1.06 2.2-.84 2.2-.84.44 1.12.16 1.95.08 2.16.51.57.82 1.3.82 2.19 0 3.13-1.88 3.81-3.66 4.01.29.25.54.74.54 1.5 0 1.08-.01 1.95-.01 2.21 0 .22.14.47.55.39A8.03 8.03 0 0 0 16 8.13C16 3.64 12.42 0 8 0z"/></svg><span>GitHub Organization</span></a></div></div><div class="copyright"><span>© 2026 ROOT Lab</span><span><span class="rootmark">Root</span> of Trust from the Physical Layer</span></div></div></footer>
+<footer><div class="wrap"><div class="footer-grid"><div><div class="brand"><span class="mark">R</span><span>ROOT Lab</span></div><p>보안통신 연구실 · Physical Layer Security for Communication Systems<br>The Catholic University of Korea</p></div><div><div class="footer-title">Navigate</div><a href="index.html">Home</a><a href="publications.html">Publications</a><a href="members.html">Members</a><a href="projects.html">Projects</a><a href="gallery.html">Gallery</a></div><div><div class="footer-title">Connect</div><a href="mailto:jylee120@catholic.ac.kr">jylee120@catholic.ac.kr</a><a href="contact.html">Contact</a><a class="github-link" href="https://github.com/root-jylee" target="_blank" rel="noopener noreferrer" aria-label="ROOT Lab GitHub organization"><svg viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M8 0C3.58 0 0 3.64 0 8.13c0 3.59 2.29 6.64 5.47 7.71.4.08.55-.18.55-.39 0-.19-.01-.82-.01-1.49-2.23.49-2.7-1.09-2.7-1.09-.36-.94-.88-1.19-.88-1.19-.72-.5.05-.49.05-.49.8.06 1.22.83 1.22.83.71 1.24 1.87.88 2.33.67.07-.52.28-.88.51-1.08-1.78-.21-3.65-.9-3.65-4.02 0-.89.31-1.62.82-2.19-.08-.21-.36-1.04.08-2.16 0 0 .67-.22 2.2.84A7.4 7.4 0 0 1 8 3.53c.68 0 1.36.09 2 .27 1.53-1.06 2.2-.84 2.2-.84.44 1.12.16 1.95.08 2.16.51.57.82 1.3.82 2.19 0 3.13-1.88 3.81-3.66 4.01.29.25.54.74.54 1.5 0 1.08-.01 1.95-.01 2.21 0 .22.14.47.55.39A8.03 8.03 0 0 0 16 8.13C16 3.64 12.42 0 8 0z"/></svg><span>GitHub Organization</span></a></div></div><div class="copyright"><span>© 2026 ROOT Lab</span><span><span class="rootmark">Root</span> of Trust from the Physical Layer</span></div></div></footer>
 </body>
 </html>
