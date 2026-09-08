@@ -1,6 +1,6 @@
 # ROOT Lab Website
 
-Official website source for **ROOT Lab — Physical-Layer Root of Trust for Intelligent Secure Systems** at National Korea Maritime & Ocean University.
+Source for the official website of **ROOT Lab (보안통신 연구실)** — *Root of Trust from the Physical Layer* — at the Department of Information, Communications and Electronic Engineering, The Catholic University of Korea.
 
 - Website: <https://root-jylee.github.io/>
 - Research: <https://root-jylee.github.io/research.html>
@@ -11,14 +11,17 @@ Official website source for **ROOT Lab — Physical-Layer Root of Trust for Inte
 
 | Path | Purpose |
 | --- | --- |
-| `index.html` | Lab overview and recent news |
-| `research.html` | Research vision and major themes |
-| `publications.html` | Publications and patents |
+| `index.html` | Home: hero, lab introduction, open positions, news, research areas, gallery teaser |
 | `members.html` | Principal investigator and lab members |
+| `research.html` | Research overview and the four research axes |
+| `publications.html` | Publications and patents |
 | `projects.html` | Funded research projects |
-| `contact.html` | Contact information and location |
-| `styles.css` | Shared visual system and responsive layout |
-| `assets/` | Images and other static assets |
+| `gallery.html` | Lab photos |
+| `contact.html` | Contact information and location (Michael Hall T710) |
+| `404.html` | Not-found page |
+| `styles.css` | Shared visual system, Latin Modern web fonts, responsive layout |
+| `assets/img/` | Emblem, logo lockups, hero image, figures |
+| `assets/fonts/` | Latin Modern Roman web fonts (GUST Font License) |
 
 The site is intentionally static and does not require a Jekyll build. The `.nojekyll` file tells GitHub Pages to serve the files as written.
 
@@ -32,14 +35,13 @@ python -m http.server 4173
 
 Then open <http://127.0.0.1:4173/>. Opening the HTML files directly can hide path and caching problems, so an HTTP preview is preferred.
 
-## Branch and deployment workflow
+## Deployment
 
-1. Create a short-lived branch from `beta-site`.
-2. Make one focused change and preview every affected page locally.
-3. Open a pull request into `beta-site` for review.
-4. Confirm the beta deployment before promoting the reviewed changes to the production repository or production branch.
+GitHub Pages publishes the `main` branch. A push to `main` goes live within about a minute.
 
-Avoid editing the published branch directly. Keep content changes separate from broad design changes when practical.
+- Preview every affected page locally before pushing, at desktop and phone widths.
+- When `styles.css` or an image changes, bump the `?v=` query string on its references so browsers pick up the new file.
+- Keep content changes separate from broad design changes when practical.
 
 ## Adding a publication
 
@@ -56,25 +58,12 @@ When an artifact is publicly available, add compact links after the citation:
 
 Only include links that are public and maintained. Code should normally live in a dedicated repository in the ROOT Lab GitHub organization. Each artifact repository should follow the template in [`docs/paper-repository-template.md`](docs/paper-repository-template.md).
 
-Suggested publication metadata for a future data-driven version of the site:
-
-```yaml
-- title: Full paper title
-  authors: Author One, Author Two
-  venue: Journal or conference
-  year: 2026
-  tags: [covert-communication, physical-layer-security]
-  paper_url: https://...
-  code_url: https://github.com/root-jylee/...
-  dataset_url: null
-  project_url: null
-```
-
-## Updating people, projects, and news
+## Updating people, projects, news, and photos
 
 - Add or update people in `members.html`.
 - Add funded projects in `projects.html`, including the funder and project period.
 - Keep the home-page news list short; move lasting research information to its dedicated page.
+- Put gallery photos in `assets/img/gallery/` and add them to `gallery.html`.
 - Do not commit private contact details, unpublished manuscripts, credentials, or restricted datasets.
 
 ## Organization profile
@@ -96,6 +85,6 @@ A ready-to-copy draft is maintained in [`docs/organization-profile-README.md`](d
 
 ## Contact
 
-ROOT Lab is led by **Jinyoung Lee, Ph.D.**, Department of Electronics and Electrical Information Engineering, National Korea Maritime & Ocean University.
+ROOT Lab is led by **Jinyoung Lee, Ph.D.**, Assistant Professor, Department of Information, Communications and Electronic Engineering, The Catholic University of Korea.
 
 See the [contact page](https://root-jylee.github.io/contact.html) for current contact details.

@@ -1,19 +1,18 @@
 # ROOT Lab
 
-**Physical-Layer Root of Trust for Intelligent Secure Systems**  
-National Korea Maritime & Ocean University
+**Root of Trust from the Physical Layer**  
+보안통신 연구실 · Department of Information, Communications and Electronic Engineering, The Catholic University of Korea
 
-ROOT Lab studies security, privacy, and trust for communication systems. We transform observable physical signals, wireless channels, mobility, and device characteristics into mechanisms that can limit, verify, or control what an adversary can infer.
+ROOT Lab grounds security not only in computational hardness but also in the physical and statistical structure of communication systems. Channel randomness, device-specific impairments, geometry and mobility, interference and uncertainty, and channel noise all leave traces on received signals; we exploit or control those traces to establish security, and build on them to design and optimize communication systems.
 
-[Website](https://s2in0217.github.io/root-jylee.github.io/) · [Research](https://s2in0217.github.io/root-jylee.github.io/research.html) · [Publications](https://s2in0217.github.io/root-jylee.github.io/publications.html) · [Members](https://s2in0217.github.io/root-jylee.github.io/members.html) · [Contact](https://s2in0217.github.io/root-jylee.github.io/contact.html)
+[Website](https://root-jylee.github.io/) · [Members](https://root-jylee.github.io/members.html) · [Research](https://root-jylee.github.io/research.html) · [Publications](https://root-jylee.github.io/publications.html) · [Contact](https://root-jylee.github.io/contact.html)
 
 ## Research areas
 
-- **Covert communication** — conceal whether a transmission occurred.
-- **Physical-layer authentication** — verify who generated a signal.
-- **Physical-layer secrecy** — protect transmitted information.
-- **Differential privacy** — protect individual data contributions.
-- **Awareness-driven intelligent security** — sense and reason about adversaries for adaptive protection.
+- **Covert communication** — hiding that communication takes place.
+- **Physical-layer authentication (PLA)** — verifying who is transmitting.
+- **Physical-layer key generation (PLKG)** — deriving shared secret keys from the channel.
+- **Physical-layer-aided differential privacy (PLDP)** — limiting what individual data reveals.
 
 ## Open research artifacts
 
@@ -27,7 +26,7 @@ Paper repositories use a short, recognizable project name. Each repository READM
 
 ## Join ROOT Lab
 
-We welcome motivated students interested in physical-layer security, privacy, wireless communications, and intelligent systems. See our [contact page](https://s2in0217.github.io/root-jylee.github.io/contact.html) for current opportunities.
+We are recruiting graduate students to join us in designing and researching secure communication systems, and welcome undergraduate interns from the second semester of their second year onward. Please send your academic transcript and CV to <jylee120@catholic.ac.kr>. See the [contact page](https://root-jylee.github.io/contact.html) for location details.
 
 ---
 
