@@ -326,3 +326,11 @@ body{font-size:clamp(15px,14px + .28vw,17.5px)}
 .member-empty{margin:0;color:var(--muted)}
 html{scroll-padding-top:72px}
 @media(max-width:900px){html{scroll-padding-top:156px}}
+.home-album{display:block;padding:14px 16px 16px;background:#fff;border:1px solid var(--line);border-radius:7px;color:var(--ink);transition:.2s ease}
+.home-album:hover,.home-album:focus-visible{border-color:var(--navy);transform:translateY(-3px);outline:none}
+.home-album-head{display:flex;align-items:baseline;justify-content:space-between;gap:12px;margin-bottom:12px}
+.home-album-head b{font:700 clamp(15px,14px + .3vw,17px)/1.3 var(--serif);color:var(--navy)}
+.home-album-head span{color:var(--muted);font-size:clamp(12px,11.5px + .15vw,13px)}
+.home-album-strip{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.home-album-strip img{display:block;width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;border-radius:4px}
+@media(max-width:560px){.home-album-strip{grid-template-columns:1fr 1fr;gap:8px}.home-album-head{flex-direction:column;gap:2px}}
