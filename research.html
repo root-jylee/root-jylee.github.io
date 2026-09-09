@@ -28,14 +28,11 @@
     .design-flow .step span{display:block;margin-top:4px;color:var(--muted);font-size:clamp(12px,11.5px + .15vw,13.5px)}
     .design-flow .arrow{color:var(--blue);font-size:20px}
     .systems-figure{margin:0;width:100%;max-width:none;padding:0;border:1px solid var(--line);border-radius:7px;overflow:hidden;background:#fff}
-    .systems-figure svg{display:block;width:100%;height:auto}
-    .systems-legend{display:none;list-style:none;margin:12px 0 0;padding:0;gap:8px;flex-wrap:wrap}
-    .systems-legend li{padding:5px 12px;border:1px solid var(--line);border-radius:999px;background:#fff;color:var(--navy);font-size:12.5px;font-weight:700}
+    .systems-figure img{display:block;width:100%;height:auto}
     .design-outcome{margin-top:22px;padding:18px 22px;background:var(--navy);color:#fff;border-radius:7px;display:grid;grid-template-columns:auto 1fr;gap:18px;align-items:center}
     .design-outcome b{font:700 clamp(16px,15px + .4vw,20px)/1.3 var(--serif)}
     .design-outcome span{color:#c9d6e6;font-size:clamp(13px,12.5px + .2vw,15px);line-height:1.6}
     @media(max-width:860px){.design-flow{grid-template-columns:1fr}.design-flow .arrow{transform:rotate(90deg);justify-self:center;line-height:1}.design-outcome{grid-template-columns:1fr}}
-    @media(max-width:640px){.svg-label{display:none}.systems-legend{display:flex}}
     .objective-row{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
     .objective{display:flex;flex-direction:column;justify-content:flex-start;padding:18px 20px;background:#fff;border:1px solid var(--line);border-radius:7px;color:var(--ink);transition:.2s ease}
     .objective:hover,.objective:focus-visible{border-color:var(--navy);transform:translateY(-3px);outline:none}
@@ -93,73 +90,8 @@
         <a class="objective" href="#differential-privacy"><div class="objective-top"><span>04 · Data Privacy</span><span class="objective-abbr">PLDP</span></div><b>Protect</b><small>individual data</small><i class="objective-tech">Physical-Layer-Aided Differential Privacy</i></a>
       </div>
       <div class="objective-join" aria-hidden="true"><span></span><i>↓</i></div>
-      <div class="design-outcome"><b>Secure communication system design</b><span>Each of the four objectives is achieved in the end by the design of the communication system. We decide how much power to send, which users to schedule, where to place a relay, and which threshold to use, so that the objective is met. The figure below shows the systems we have studied so far.</span></div>
-      <figure class="systems-figure" aria-label="Communication systems studied at ROOT Lab">
-        <svg viewBox="0 0 1120 440" xmlns="http://www.w3.org/2000/svg" role="img">
-          <title>Satellite, UAV, terrestrial, and underwater communication systems</title>
-          <defs>
-            <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#eaf1fb"/><stop offset="1" stop-color="#f7fafd"/></linearGradient>
-            <linearGradient id="sea" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#cfe0f2"/><stop offset="1" stop-color="#9dbbd9"/></linearGradient>
-          </defs>
-          <rect x="0" y="0" width="1120" height="300" fill="url(#sky)"/>
-          <path d="M0 300 L0 440 L640 440 L640 300 Q560 268 470 292 Q380 300 300 288 Q160 272 0 300 Z" fill="#efeadc"/>
-          <path d="M640 300 Q680 292 720 300 T800 300 T880 300 T960 300 T1040 300 T1120 300 L1120 440 L640 440 Z" fill="url(#sea)"/>
-          <path d="M640 300 Q680 292 720 300 T800 300 T880 300 T960 300 T1040 300 T1120 300" fill="none" stroke="#6f93b8" stroke-width="2"/>
-          <!-- links -->
-          <g fill="none" stroke="#3f6fa8" stroke-width="2" stroke-dasharray="7 6" opacity=".85">
-            <path d="M935 92 L585 182"/><path d="M955 96 L835 276"/><path d="M365 150 L540 190"/><path d="M585 200 L820 282"/>
-          </g>
-          <g fill="none" stroke="#b8302f" stroke-width="2" stroke-dasharray="4 5" opacity=".9"><path d="M735 236 L610 200"/><path d="M735 236 L815 282"/></g>
-          <!-- satellite -->
-          <g transform="translate(960,70)">
-            <rect x="-24" y="-16" width="48" height="32" rx="4" fill="#0b2a4d"/>
-            <rect x="-92" y="-9" width="60" height="18" fill="#3f6fa8"/><rect x="32" y="-9" width="60" height="18" fill="#3f6fa8"/>
-            <path d="M-92 -9 v18 M-77 -9 v18 M-62 -9 v18 M-47 -9 v18 M47 -9 v18 M62 -9 v18 M77 -9 v18" stroke="#eaf1fb" stroke-width="1.5"/>
-            <circle cx="0" cy="24" r="6" fill="#e0b13a"/>
-            <path d="M-40 52 Q0 36 40 52" fill="none" stroke="#3f6fa8" stroke-width="2"/><path d="M-26 62 Q0 50 26 62" fill="none" stroke="#3f6fa8" stroke-width="2"/>
-          </g>
-          <!-- UAV -->
-          <g transform="translate(330,140)">
-            <path d="M-30 -18 L30 18 M30 -18 L-30 18" stroke="#0b2a4d" stroke-width="4" stroke-linecap="round"/>
-            <ellipse cx="-34" cy="-20" rx="20" ry="5" fill="none" stroke="#0b2a4d" stroke-width="3"/><ellipse cx="34" cy="-20" rx="20" ry="5" fill="none" stroke="#0b2a4d" stroke-width="3"/>
-            <ellipse cx="-34" cy="20" rx="20" ry="5" fill="none" stroke="#0b2a4d" stroke-width="3"/><ellipse cx="34" cy="20" rx="20" ry="5" fill="none" stroke="#0b2a4d" stroke-width="3"/>
-            <rect x="-16" y="-9" width="32" height="18" rx="6" fill="#0b2a4d"/><circle cx="0" cy="0" r="4" fill="#e0b13a"/>
-          </g>
-          <!-- terrestrial: city + base station -->
-          <g fill="#c9d3e0">
-            <rect x="420" y="232" width="26" height="60"/><rect x="452" y="212" width="34" height="80"/><rect x="492" y="242" width="22" height="50"/><rect x="606" y="226" width="30" height="66"/>
-          </g>
-          <g fill="#eef4fb"><rect x="458" y="222" width="6" height="6"/><rect x="470" y="222" width="6" height="6"/><rect x="458" y="238" width="6" height="6"/><rect x="470" y="238" width="6" height="6"/><rect x="612" y="236" width="6" height="6"/><rect x="624" y="236" width="6" height="6"/></g>
-          <g transform="translate(560,292)">
-            <path d="M-16 0 L-6 -112 L6 -112 L16 0 Z" fill="#0b2a4d"/><path d="M-13 -30 H13 M-10 -60 H10 M-8 -84 H8" stroke="#eef4fb" stroke-width="2"/>
-            <rect x="-22" y="-124" width="8" height="22" rx="2" fill="#3f6fa8"/><rect x="14" y="-124" width="8" height="22" rx="2" fill="#3f6fa8"/><rect x="-4" y="-130" width="8" height="26" rx="2" fill="#3f6fa8"/>
-            <path d="M-38 -128 Q-30 -112 -38 -96" fill="none" stroke="#3f6fa8" stroke-width="2"/><path d="M38 -128 Q30 -112 38 -96" fill="none" stroke="#3f6fa8" stroke-width="2"/>
-          </g>
-          <!-- adversary -->
-          <g transform="translate(735,236)">
-            <path d="M-8 22 L0 -6 L8 22 Z" fill="#b8302f"/><circle cx="0" cy="-12" r="6" fill="none" stroke="#b8302f" stroke-width="2.5"/>
-            <path d="M-16 -22 Q-10 -12 -16 -2" fill="none" stroke="#b8302f" stroke-width="2"/><path d="M16 -22 Q10 -12 16 -2" fill="none" stroke="#b8302f" stroke-width="2"/>
-          </g>
-          <!-- surface vessel -->
-          <g transform="translate(830,290)">
-            <path d="M-46 0 L-36 16 L36 16 L50 0 Z" fill="#0b2a4d"/><rect x="-16" y="-16" width="30" height="16" fill="#3f6fa8"/><path d="M4 -16 V-34" stroke="#0b2a4d" stroke-width="3"/>
-          </g>
-          <!-- underwater vehicle + acoustic waves -->
-          <g fill="none" stroke="#0b2a4d" stroke-width="2" opacity=".75"><path d="M806 322 Q830 336 854 322"/><path d="M796 340 Q830 360 864 340"/><path d="M786 358 Q830 384 874 358"/></g>
-          <g transform="translate(940,395)">
-            <ellipse cx="0" cy="0" rx="46" ry="14" fill="#0b2a4d"/><path d="M-46 0 L-62 -12 L-62 12 Z" fill="#0b2a4d"/><rect x="-8" y="-24" width="16" height="12" rx="2" fill="#0b2a4d"/><circle cx="22" cy="-3" r="4" fill="#e0b13a"/>
-          </g>
-          <!-- labels -->
-          <g class="svg-label" font-family="Latin Modern, Georgia, serif" font-size="21" fill="#10213b" text-anchor="middle">
-            <text x="960" y="170">Satellite / NTN</text>
-            <text x="330" y="206">UAV</text>
-            <text x="520" y="330">Terrestrial</text>
-            <text x="735" y="282" fill="#b8302f" font-size="17">Adversary</text>
-            <text x="960" y="432">Underwater acoustic</text>
-          </g>
-        </svg>
-      </figure>
-      <ul class="systems-legend" aria-hidden="true"><li>Satellite / NTN</li><li>UAV</li><li>Terrestrial</li><li>Underwater acoustic</li></ul>
+      <div class="design-outcome"><b>Secure communication system design</b><span>Each of the four objectives is achieved in the end by the design of the communication system. We decide how much power to send, which users to schedule, where to place a relay, and which threshold to use, so that the objective is met. The figure below shows the whole path, from the systems we study, through the physical layer, to the four objectives.</span></div>
+      <figure class="systems-figure"><a href="assets/img/Overview.png" target="_blank" rel="noopener" title="Open full-size figure"><img src="assets/img/research/overview.png" alt="ROOT Lab research overview: diverse communication systems, the physical layer as a source of observable information, physical-layer security resources as the root of trust, and the four security objectives" loading="lazy" width="1600" height="800"></a></figure>
     </div>
   </section>
 
