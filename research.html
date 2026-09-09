@@ -36,12 +36,12 @@
     @media(max-width:860px){.design-flow{grid-template-columns:1fr}.design-flow .arrow{transform:rotate(90deg);justify-self:center;line-height:1}.design-outcome{grid-template-columns:1fr}}
     @media(max-width:640px){.svg-label{display:none}.systems-legend{display:flex}}
     .objective-row{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
-    .objective{display:flex;flex-direction:column;padding:18px 20px;background:#fff;border:1px solid var(--line);border-radius:7px;color:var(--ink);transition:.2s ease}
+    .objective{display:flex;flex-direction:column;justify-content:flex-start;padding:18px 20px;background:#fff;border:1px solid var(--line);border-radius:7px;color:var(--ink);transition:.2s ease}
     .objective:hover,.objective:focus-visible{border-color:var(--navy);transform:translateY(-3px);outline:none}
     .objective span{color:var(--blue);font-size:clamp(11.5px,11px + .15vw,12.5px);font-weight:700;letter-spacing:.02em}
     .objective b{margin:6px 0 4px;color:var(--navy);font:700 clamp(22px,18px + .8vw,30px)/1.1 var(--serif)}
-    .objective small{color:var(--ink);font-size:clamp(12.5px,12px + .15vw,14px);line-height:1.5}
-    .objective small br+*{display:block}
+    .objective small{color:var(--ink);font-size:clamp(14px,13px + .25vw,16px);line-height:1.45}
+    .objective-tech{display:block;margin-top:14px;padding-top:10px;border-top:1px solid var(--line);color:var(--blue);font-style:normal;font-weight:700;font-size:clamp(12.5px,12px + .15vw,13.5px);letter-spacing:.01em}
     .objective-join{display:grid;grid-template-columns:1fr;justify-items:center;height:44px;position:relative}
     .objective-join span{position:absolute;left:12%;right:12%;top:0;height:16px;border:1px solid var(--line);border-top:0;border-radius:0 0 8px 8px}
     .objective-join i{position:absolute;top:14px;color:var(--blue);font-style:normal;font-size:22px;line-height:1;background:var(--paper);padding:0 10px}
@@ -78,10 +78,10 @@
       <p class="design-intro">Most security work happens above the physical layer, with keys, certificates, and protocols. We work one level down. A radio signal carries more than its payload. The channel it crossed, the hardware that produced it, and where and how fast the transmitter was moving all leave marks on what the receiver sees. Those marks are hard to forge and hard to erase, and that is what makes them useful.</p>
       <p class="design-intro">Our research asks how far this can be pushed. Can the marks hide a transmission altogether? Can they prove who sent a packet? Can two radios turn them into a key that nobody else holds? Can the noise and mixing of signals in the air keep a user&rsquo;s data private? Each of these is a security objective, and each one ends up as a question about how the communication system itself should be built.</p>
       <div class="objective-row" aria-label="Four security objectives">
-        <a class="objective" href="#covert-communication"><span>01 · Existence</span><b>Hide</b><small>the existence of communication<br>Covert Communication</small></a>
-        <a class="objective" href="#authentication"><span>02 · Authenticity</span><b>Verify</b><small>who is transmitting<br>Physical-Layer Authentication</small></a>
-        <a class="objective" href="#key-generation"><span>03 · Secret Key</span><b>Establish</b><small>shared secret keys<br>Physical-Layer Key Generation</small></a>
-        <a class="objective" href="#differential-privacy"><span>04 · Data Privacy</span><b>Protect</b><small>individual data<br>Physical-Layer-Aided Differential Privacy</small></a>
+        <a class="objective" href="#covert-communication"><span>01 · Existence</span><b>Hide</b><small>the existence of communication</small><i class="objective-tech">Covert Communication</i></a>
+        <a class="objective" href="#authentication"><span>02 · Authenticity</span><b>Verify</b><small>who is transmitting</small><i class="objective-tech">Physical-Layer Authentication</i></a>
+        <a class="objective" href="#key-generation"><span>03 · Secret Key</span><b>Establish</b><small>shared secret keys</small><i class="objective-tech">Physical-Layer Key Generation</i></a>
+        <a class="objective" href="#differential-privacy"><span>04 · Data Privacy</span><b>Protect</b><small>individual data</small><i class="objective-tech">Physical-Layer-Aided Differential Privacy</i></a>
       </div>
       <div class="objective-join" aria-hidden="true"><span></span><i>↓</i></div>
       <div class="design-outcome"><b>Secure communication system design</b><span>In practice the answer is always a set of design choices: how much power to send, whom to schedule, where to put a relay, what threshold to accept. Below are the systems we have worked on so far.</span></div>
@@ -151,8 +151,6 @@
         </svg>
       </figure>
       <ul class="systems-legend" aria-hidden="true"><li>Satellite / NTN</li><li>UAV</li><li>Terrestrial</li><li>Underwater acoustic</li></ul>
-      <div class="design-sub">How a project usually goes</div>
-      <p class="design-intro">We start with a concrete system and a channel model, adversary included. Then we write down a metric that says in numbers how well the objective is met: a detection error probability, a false-alarm rate, a key rate, a privacy budget. The interesting part is working out how the system&rsquo;s parameters move that metric. Once that is clear, the design problem is usually an optimization we know how to solve. The recipe is the same whether the system is a cellular cell, a drone link, a satellite pass, or an acoustic modem under water.</p>
     </div>
   </section>
 
