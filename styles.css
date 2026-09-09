@@ -341,8 +341,3 @@ html{scroll-padding-top:72px}
 .scope-card:hover .scope-obj,.scope-card:focus-visible .scope-obj{color:#dbe6f3}
 .scope-card:hover h3.scope-tech,.scope-card:focus-visible h3.scope-tech{color:var(--cyan);border-color:rgba(255,255,255,.2)}
 .scope-card .scope-link{margin-top:14px}
-.about-layout{display:grid;grid-template-columns:300px minmax(0,1fr);gap:44px;align-items:start}
-.about-layout .about-lockup{width:300px;max-width:100%;margin:0}
-.about-layout .about-grid{grid-template-columns:1fr;gap:26px}
-@media(max-width:900px){.about-layout{grid-template-columns:1fr;gap:26px;justify-items:start}.about-layout .about-lockup{width:min(240px,60%)}}
-.brand .mark-img{width:44px;height:44px}
