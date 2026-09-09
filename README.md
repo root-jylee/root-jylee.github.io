@@ -66,6 +66,14 @@ Only include links that are public and maintained. Code should normally live in 
 - Put gallery photos in `assets/img/gallery/` and add them to `gallery.html`.
 - Do not commit private contact details, unpublished manuscripts, credentials, or restricted datasets.
 
+## Research figures
+
+The Research page shows web-sized copies of the concept figures from `assets/img/research/` and links each one to its full-size original in `assets/img/` (`Overview.png`, `Covert.png`, `PLA.png`, `PLKG.png`, `PLDP.png`). After replacing an original, regenerate the copies so the two stay in sync:
+
+```bash
+python3 scripts/optimize_figures.py
+```
+
 ## Organization profile
 
 The ROOT Lab organization landing page uses a separate special repository:
