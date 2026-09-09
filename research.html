@@ -18,7 +18,7 @@
   <meta name="twitter:description" content="Research philosophy and the four core research areas of ROOT Lab in physical-layer security.">
   <meta name="twitter:image" content="https://root-jylee.github.io/assets/img/og-image.png?v=6">
   <link rel="stylesheet" href="assets/katex/katex.min.css">
-  <link rel="stylesheet" href="styles.css?v=20260909-lm26">
+  <link rel="stylesheet" href="styles.css?v=20260909-lm27">
   <style>
     .design-intro{max-width:940px;margin:0 0 26px;color:var(--ink);font-size:clamp(15px,14px + .3vw,17.5px);line-height:1.75}
     .design-intro b{color:var(--navy)}
@@ -39,6 +39,8 @@
     .objective-row{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
     .objective{display:flex;flex-direction:column;justify-content:flex-start;padding:18px 20px;background:#fff;border:1px solid var(--line);border-radius:7px;color:var(--ink);transition:.2s ease}
     .objective:hover,.objective:focus-visible{border-color:var(--navy);transform:translateY(-3px);outline:none}
+    .objective-top{display:flex;justify-content:space-between;align-items:baseline;gap:10px}
+    .objective-abbr{color:var(--muted)!important;letter-spacing:.04em}
     .objective span{color:var(--blue);font-size:clamp(11.5px,11px + .15vw,12.5px);font-weight:700;letter-spacing:.02em}
     .objective b{margin:6px 0 4px;color:var(--navy);font:700 clamp(22px,18px + .8vw,30px)/1.1 var(--serif)}
     .objective small{color:var(--ink);font-size:clamp(14px,13px + .25vw,16px);line-height:1.45}
@@ -85,10 +87,10 @@
       <p class="design-intro">Most security work happens above the physical layer, with keys, certificates, and protocols. We work one level down. A radio signal carries more than its payload. The channel it crossed, the hardware that produced it, and where and how fast the transmitter was moving all leave marks on what the receiver sees. Those marks are hard to forge and hard to erase, and that is what makes them useful.</p>
       <p class="design-intro">Our research asks how far this can be pushed. Can the marks hide a transmission altogether? Can they prove who sent a packet? Can two radios turn them into a key that nobody else holds? Can the noise and mixing of signals in the air keep a user&rsquo;s data private? Each of these is a security objective, and each one ends up as a question about how the communication system itself should be built.</p>
       <div class="objective-row" aria-label="Four security objectives">
-        <a class="objective" href="#covert-communication"><span>01 · Existence</span><b>Hide</b><small>the existence of communication</small><i class="objective-tech">Covert Communication</i></a>
-        <a class="objective" href="#authentication"><span>02 · Authenticity</span><b>Verify</b><small>who is transmitting</small><i class="objective-tech">Physical-Layer Authentication</i></a>
-        <a class="objective" href="#key-generation"><span>03 · Secret Key</span><b>Establish</b><small>shared secret keys</small><i class="objective-tech">Physical-Layer Key Generation</i></a>
-        <a class="objective" href="#differential-privacy"><span>04 · Data Privacy</span><b>Protect</b><small>individual data</small><i class="objective-tech">Physical-Layer-Aided Differential Privacy</i></a>
+        <a class="objective" href="#covert-communication"><div class="objective-top"><span>01 · Existence</span><span class="objective-abbr">Covert</span></div><b>Hide</b><small>the existence of communication</small><i class="objective-tech">Covert Communication</i></a>
+        <a class="objective" href="#authentication"><div class="objective-top"><span>02 · Authenticity</span><span class="objective-abbr">PLA</span></div><b>Verify</b><small>who is transmitting</small><i class="objective-tech">Physical-Layer Authentication</i></a>
+        <a class="objective" href="#key-generation"><div class="objective-top"><span>03 · Secret Key</span><span class="objective-abbr">PLKG</span></div><b>Establish</b><small>shared secret keys</small><i class="objective-tech">Physical-Layer Key Generation</i></a>
+        <a class="objective" href="#differential-privacy"><div class="objective-top"><span>04 · Data Privacy</span><span class="objective-abbr">PLDP</span></div><b>Protect</b><small>individual data</small><i class="objective-tech">Physical-Layer-Aided Differential Privacy</i></a>
       </div>
       <div class="objective-join" aria-hidden="true"><span></span><i>↓</i></div>
       <div class="design-outcome"><b>Secure communication system design</b><span>Each of the four objectives is achieved in the end by the design of the communication system. We decide how much power to send, which users to schedule, where to place a relay, and which threshold to use, so that the objective is met. The figure below shows the systems we have studied so far.</span></div>

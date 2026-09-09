@@ -334,3 +334,10 @@ html{scroll-padding-top:72px}
 .home-album-strip{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
 .home-album-strip img{display:block;width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;border-radius:4px}
 @media(max-width:560px){.home-album-strip{grid-template-columns:1fr 1fr;gap:8px}.home-album-head{flex-direction:column;gap:2px}}
+.scope-verb{display:block;margin:8px 0 2px;color:var(--navy);font:700 clamp(22px,18px + .8vw,30px)/1.1 var(--serif)}
+.scope-card p.scope-obj{margin:0;color:var(--ink);font-size:clamp(14px,13px + .25vw,16px);line-height:1.45}
+.scope-card h3.scope-tech{margin:14px 0 0;padding-top:10px;border-top:1px solid var(--line);color:var(--blue);font:700 clamp(12.5px,12px + .15vw,13.5px)/1.35 var(--serif);letter-spacing:.01em}
+.scope-card:hover .scope-verb,.scope-card:focus-visible .scope-verb{color:#fff}
+.scope-card:hover .scope-obj,.scope-card:focus-visible .scope-obj{color:#dbe6f3}
+.scope-card:hover h3.scope-tech,.scope-card:focus-visible h3.scope-tech{color:var(--cyan);border-color:rgba(255,255,255,.2)}
+.scope-card .scope-link{margin-top:14px}
