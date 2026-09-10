@@ -341,3 +341,5 @@ html{scroll-padding-top:72px}
 .scope-card:hover .scope-obj,.scope-card:focus-visible .scope-obj{color:#dbe6f3}
 .scope-card:hover h3.scope-tech,.scope-card:focus-visible h3.scope-tech{color:var(--cyan);border-color:rgba(255,255,255,.2)}
 .scope-card .scope-link{margin-top:14px}
+.pub-legend{margin:26px 0 -10px;color:var(--muted);font-size:clamp(12.5px,12px + .15vw,13.5px)}
+.pub-list sup,.pub-legend sup{font-size:.72em;line-height:0;color:var(--blue)}
