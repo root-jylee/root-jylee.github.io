@@ -26,7 +26,7 @@ Paper repositories use a short, recognizable project name. Each repository READM
 
 ## Join ROOT Lab
 
-We are recruiting graduate students to join us in designing and researching secure communication systems, and welcome undergraduate interns from the second semester of their second year onward. Please send your CV to <jylee120@catholic.ac.kr>. See the [contact page](https://root-jylee.github.io/contact.html) for location details.
+We are recruiting graduate students to join us in designing and researching secure communication systems, and welcome undergraduate interns from the second semester of their second year onward. Please send a short introduction of yourself to <jylee120@catholic.ac.kr>. See the [contact page](https://root-jylee.github.io/contact.html) for location details.
 
 ---
 
