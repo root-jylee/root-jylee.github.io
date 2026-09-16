@@ -1,6 +1,6 @@
 # ROOT Lab Website
 
-Source for the official website of **ROOT Lab (보안통신 연구실)** — *Root of Trust from the Physical Layer* — at the Department of Information, Communications and Electronic Engineering, The Catholic University of Korea.
+Source for the official website of **ROOT Lab (보안통신 연구실)** — *Root of Trust from the Physical Layer* — at the School of Information, Communications and Electronic Engineering, The Catholic University of Korea.
 
 - Website: <https://root-jylee.github.io/>
 - Research: <https://root-jylee.github.io/research.html>
@@ -93,6 +93,6 @@ A ready-to-copy draft is maintained in [`docs/organization-profile-README.md`](d
 
 ## Contact
 
-ROOT Lab is led by **Jinyoung Lee, Ph.D.**, Assistant Professor, Department of Information, Communications and Electronic Engineering, The Catholic University of Korea.
+ROOT Lab is led by **Jinyoung Lee, Ph.D.**, Assistant Professor, School of Information, Communications and Electronic Engineering, The Catholic University of Korea.
 
 See the [contact page](https://root-jylee.github.io/contact.html) for current contact details.

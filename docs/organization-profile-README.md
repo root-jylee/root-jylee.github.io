@@ -1,7 +1,7 @@
 # ROOT Lab
 
 **Root of Trust from the Physical Layer**  
-보안통신 연구실 · Department of Information, Communications and Electronic Engineering, The Catholic University of Korea
+보안통신 연구실 · School of Information, Communications and Electronic Engineering, The Catholic University of Korea
 
 ROOT Lab grounds security not only in computational hardness but also in the physical and statistical structure of communication systems. Channel randomness, device-specific impairments, geometry and mobility, interference and uncertainty, and channel noise all leave traces on received signals; we exploit or control those traces to establish security, and build on them to design and optimize communication systems.
 
