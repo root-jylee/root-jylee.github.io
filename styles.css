@@ -343,3 +343,4 @@ html{scroll-padding-top:72px}
 .scope-card .scope-link{margin-top:14px}
 .pub-legend{margin:26px 0 -10px;color:var(--muted);font-size:clamp(12.5px,12px + .15vw,13.5px)}
 .pub-list sup,.pub-legend sup{font-size:.72em;line-height:0;color:var(--blue)}
+.brand .mark-img{width:40px;height:40px;object-fit:contain}
