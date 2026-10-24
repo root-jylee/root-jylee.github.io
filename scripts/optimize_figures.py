@@ -27,6 +27,6 @@ for src, dst in PAIRS.items():
     src_path = os.path.join("assets/img", src)
     png = os.path.join("assets/img/research", dst + ".png")
     webp = os.path.join("assets/img/research", dst + ".webp")
-    subprocess.run(["convert", src_path, "-strip", "-define", "png:compression-level=9", png], check=True)
-    subprocess.run(["convert", src_path, "-strip", "-quality", "96", webp], check=True)
+    subprocess.run(["convert", src_path, "-unsharp", "0x0.8+2.0+0.02", "-strip", "-define", "png:compression-level=9", png], check=True)
+    subprocess.run(["convert", src_path, "-unsharp", "0x0.8+2.0+0.02", "-strip", "-quality", "96", webp], check=True)
     print(f"{png}: {os.path.getsize(png) // 1024} KB, {webp}: {os.path.getsize(webp) // 1024} KB")
