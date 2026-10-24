@@ -1,28 +1,32 @@
-"""Regenerate the web-sized research figures from the originals.
+"""Regenerate the web copies of the research figures from the originals.
 
 Originals live in assets/img/ (Overview.png, Covert.png, PLA.png, PLKG.png,
-PLDP.png). The pages display the smaller copies in assets/img/research/ and
-link to the originals for full-size viewing. Run this after replacing any
-original so both stay in sync:
+PLDP.png). research.html shows the copies in assets/img/research/ through a
+<picture> element (WebP first, PNG fallback) and links to the originals for
+full-size viewing. The copies keep the original resolution and are NOT
+palette-quantized: 256-colour dithering made the text look smeared.
+
+Run after replacing any original (needs ImageMagick `convert`):
 
     python3 scripts/optimize_figures.py
+
+Then bump the ?v= query on the figure URLs in research.html.
 """
 import os
-from PIL import Image
+import subprocess
 
 PAIRS = {
-    "Overview.png": "overview.png",
-    "Covert.png": "covert.png",
-    "PLA.png": "pla.png",
-    "PLKG.png": "plkg.png",
-    "PLDP.png": "pldp.png",
+    "Overview.png": "overview",
+    "Covert.png": "covert",
+    "PLA.png": "pla",
+    "PLKG.png": "plkg",
+    "PLDP.png": "pldp",
 }
-WIDTH = 1600
 os.makedirs("assets/img/research", exist_ok=True)
 for src, dst in PAIRS.items():
-    im = Image.open(os.path.join("assets/img", src)).convert("RGB")
-    im = im.resize((WIDTH, round(im.height * WIDTH / im.width)), Image.LANCZOS)
-    q = im.quantize(colors=256, method=Image.Quantize.MEDIANCUT, dither=Image.Dither.FLOYDSTEINBERG)
-    out = os.path.join("assets/img/research", dst)
-    q.save(out, optimize=True)
-    print(f"{out}: {im.size[0]}x{im.size[1]}, {os.path.getsize(out) // 1024} KB")
+    src_path = os.path.join("assets/img", src)
+    png = os.path.join("assets/img/research", dst + ".png")
+    webp = os.path.join("assets/img/research", dst + ".webp")
+    subprocess.run(["convert", src_path, "-strip", "-define", "png:compression-level=9", png], check=True)
+    subprocess.run(["convert", src_path, "-strip", "-quality", "96", webp], check=True)
+    print(f"{png}: {os.path.getsize(png) // 1024} KB, {webp}: {os.path.getsize(webp) // 1024} KB")
