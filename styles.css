@@ -377,3 +377,11 @@ html{scroll-padding-top:72px}
 .openings-points li b{display:block;margin-bottom:4px;color:var(--blue);font-size:15px}
 .openings-col .opening-strip{margin-top:auto;padding-top:22px}
 .openings-col{padding:20px 26px 24px}.openings-col .section-label-row{margin-bottom:10px}.openings-col .section-title{font-size:clamp(26px,22px + 1vw,34px)}.openings-lead,.openings-points li,.openings-col .opening-strip p{line-height:1.6}.openings-points li{padding:13px 0}.openings-col .opening-strip{padding-top:16px}.about-grid p{line-height:1.8}
+
+/* Affiliation strip above the footer */
+.affiliation{background:#fff;border-top:1px solid var(--line)}
+.affiliation .wrap{display:flex;align-items:center;justify-content:space-between;gap:24px;padding:20px 0}
+.affiliation a{display:inline-flex;align-items:center}
+.aff-lab img{height:54px;width:auto;display:block}
+.aff-cuk img{height:44px;width:auto;display:block}
+@media(max-width:560px){.affiliation .wrap{padding:16px 0}.aff-lab img{height:40px}.aff-cuk img{height:34px}}
