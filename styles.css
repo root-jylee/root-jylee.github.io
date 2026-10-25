@@ -385,3 +385,5 @@ html{scroll-padding-top:72px}
 .aff-lab img{height:54px;width:auto;display:block}
 .aff-cuk img{height:44px;width:auto;display:block}
 @media(max-width:560px){.affiliation .wrap{padding:16px 0}.aff-lab img{height:40px}.aff-cuk img{height:34px}}
+.openings-lead,.openings-points li,.openings-col .opening-strip p{font-size:clamp(15px,14px + .2vw,16.5px);line-height:1.8}.openings-points li b{font-size:inherit}.openings-col .section-title{font-size:inherit}.openings-col .section-label-row .section-title{font-size:clamp(28px,24px + 1.2vw,40px)}
+.openings-col .section-label-row .section-title,.openings-col .section-title{font-size:clamp(24px,19px + .9vw,32px)}
