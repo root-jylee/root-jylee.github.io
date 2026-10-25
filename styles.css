@@ -369,3 +369,11 @@ html{scroll-padding-top:72px}
 .openings-col .opening-strip{padding:20px 0 0;margin-top:0;background:transparent;border-left:0}
 @media(max-width:900px){.two-col{grid-template-columns:1fr;gap:36px}}
 .openings-col .theme p,.openings-col .opening-strip p{color:var(--ink);font-size:clamp(15px,14px + .2vw,16px);line-height:1.7}
+.two-col{align-items:stretch}
+.openings-col{display:flex;flex-direction:column}
+.openings-lead{margin:0 0 18px;color:var(--ink);font-size:clamp(15px,14px + .2vw,16px);line-height:1.7}
+.openings-points{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
+.openings-points li{padding:16px 0;border-bottom:1px solid var(--line);color:var(--ink);font-size:clamp(15px,14px + .2vw,16px);line-height:1.7}
+.openings-points li b{display:block;margin-bottom:4px;color:var(--blue);font-size:15px}
+.openings-col .opening-strip{margin-top:auto;padding-top:22px}
+.openings-col{padding:20px 26px 24px}.openings-col .section-label-row{margin-bottom:10px}.openings-col .section-title{font-size:clamp(26px,22px + 1vw,34px)}.openings-lead,.openings-points li,.openings-col .opening-strip p{line-height:1.6}.openings-points li{padding:13px 0}.openings-col .opening-strip{padding-top:16px}.about-grid p{line-height:1.8}
