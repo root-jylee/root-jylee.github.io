@@ -401,3 +401,21 @@ html{scroll-padding-top:72px}
 .cuk-link{display:flex;align-items:center;padding-right:22px;border-right:1px solid rgba(11,25,48,.12)}
 .cuk-link img{display:block;height:34px;width:auto}
 @media(max-width:560px){.brand-group{gap:14px}.cuk-link{padding-right:14px}.cuk-link img{height:26px}}
+
+/* ===== Site-wide type scale (keeps every page on the same sizes) ===== */
+:root{--fs-h2:clamp(24px,19px + .9vw,32px);--fs-h3:clamp(17px,15.5px + .3vw,19px);--fs-body:clamp(15px,14px + .2vw,16.5px);--fs-small:clamp(13.5px,13px + .15vw,14.5px);--fs-label:13px;--lh-body:1.7;--lh-small:1.6}
+/* Section-level headings */
+main .section-title,main .pub-section h2,main .pi-card h2,main .contact-card h2,main .axis-copy h2{font-family:var(--serif);font-size:var(--fs-h2);font-weight:500;line-height:1.2;letter-spacing:-.01em}
+main .pi-card h2 small{font-size:.6em;font-weight:500}
+/* Sub-headings inside content */
+main .about-grid h3,main .project-copy h2,main .theme h3{font-size:var(--fs-h3);font-weight:700;line-height:1.35}
+/* Body text */
+main .about-grid p,main .openings-lead,main .openings-points li,main .axis-copy p,main .design-intro,main .contact-card p,main .member-empty,main .project-item,main .scope-card .scope-obj,main .objective small,main .album-head p,main .page-hero p{font-size:var(--fs-body);line-height:var(--lh-body)}
+main .pub-list li{font-size:var(--fs-body);line-height:1.5}
+/* Secondary text */
+main .home-news-item p,main .pi-meta p,main .cv-list li,main .axis-aside-block p,main .axis-aside-block li,main .project-copy p,main .pub-legend,main .gallery-item figcaption,main figcaption,main .contact-role{font-size:var(--fs-small);line-height:var(--lh-small)}
+/* Small labels (eyebrows) */
+main .kicker,main .pi-meta h3,main .scope-tech{font-size:var(--fs-label);font-weight:700;line-height:1.4}
+main .scope-card h3.scope-tech,main .contact-card p.contact-role{font-size:var(--fs-label);line-height:1.4}
+main .contact-card p.contact-role{font-size:var(--fs-small)}
+main .pi-card p.pi-role{font-size:var(--fs-body);font-weight:700}
