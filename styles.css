@@ -347,3 +347,13 @@ html{scroll-padding-top:72px}
 
 /* Publications: tighter tracking and leading */
 .pub-list li{padding:13px 14px 13px 46px;line-height:1.45;letter-spacing:-.012em;font-size:clamp(15px,14.5px + .2vw,16.5px)}.pub-list li:before{top:14px}.pub-section{padding:48px 0}.pub-section h2{margin-bottom:18px}.pub-legend{margin:18px 0 -6px}
+
+/* Open positions: detailed layout */
+.openings-intro{margin:-6px 0 26px;max-width:860px;color:var(--ink);font-size:clamp(15px,14px + .25vw,16.5px);line-height:1.7}
+.opening-points{margin:12px 0 0;padding-left:18px;color:var(--ink);font-size:clamp(14.5px,13.5px + .2vw,15.5px);line-height:1.65}
+.opening-points li{margin:0 0 8px}.opening-points li:last-child{margin-bottom:0}
+.opening-points a,.theme p a{color:var(--navy);font-weight:600;text-decoration:underline;text-decoration-color:rgba(20,91,215,.35);text-underline-offset:3px}.opening-points a:hover,.theme p a:hover{color:var(--blue);text-decoration-color:var(--blue)}
+.opening-topics{list-style:none;padding-left:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px 24px}
+.apply-hint{margin-top:14px!important}.apply-list{margin-top:8px}
+@media(max-width:700px){.opening-topics{grid-template-columns:1fr}}
+@media(max-width:700px){.openings-section .theme{grid-template-columns:1fr;gap:6px}.openings-section .theme b{font-size:13px;letter-spacing:.04em;text-transform:uppercase}}
