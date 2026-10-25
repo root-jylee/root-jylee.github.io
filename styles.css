@@ -439,3 +439,6 @@ main .pi-card p.pi-role{font-size:var(--fs-body);font-weight:700}
 .sponsors-logos img[alt^="Institute"]{height:46px}
 @media(max-width:700px){.sponsors .wrap{flex-direction:column;align-items:flex-start;gap:14px;padding:18px 0}.sponsors-logos{justify-content:flex-start;gap:24px}.sponsors-logos img{height:32px}.sponsors-logos img[alt^="Institute"]{height:38px}}
 .sponsors-label{color:var(--blue);font-size:var(--fs-label);font-weight:700;letter-spacing:0;text-transform:none;line-height:1.4}
+.sponsors-label{font-family:var(--serif);font-size:var(--fs-h2);font-weight:500;line-height:1.2;letter-spacing:-.01em;color:var(--ink)}
+.sponsors .wrap{padding:30px 0}
+@media(max-width:700px){.sponsors .wrap{padding:24px 0}}
