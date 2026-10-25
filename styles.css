@@ -344,3 +344,6 @@ html{scroll-padding-top:72px}
 .pub-legend{margin:26px 0 -10px;color:var(--muted);font-size:clamp(12.5px,12px + .15vw,13.5px)}
 .pub-list sup,.pub-legend sup{font-size:.72em;line-height:0;color:var(--blue)}
 .brand .mark-img{width:40px;height:40px;object-fit:contain}
+
+/* Publications: tighter tracking and leading */
+.pub-list li{padding:13px 14px 13px 46px;line-height:1.45;letter-spacing:-.012em;font-size:clamp(15px,14.5px + .2vw,16.5px)}.pub-list li:before{top:14px}.pub-section{padding:48px 0}.pub-section h2{margin-bottom:18px}.pub-legend{margin:18px 0 -6px}
