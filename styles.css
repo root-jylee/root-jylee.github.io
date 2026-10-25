@@ -421,3 +421,5 @@ main .contact-card p.contact-role{font-size:var(--fs-small)}
 main .pi-card p.pi-role{font-size:var(--fs-body);font-weight:700}
 .cuk-link{padding-right:0;border-right:0;padding-left:22px;border-left:1px solid rgba(11,25,48,.12)}
 @media(max-width:560px){.cuk-link{padding-left:14px}}
+.cuk-link{border-left:0;padding-left:0;margin-left:8px}
+@media(max-width:560px){.cuk-link{padding-left:0;margin-left:4px}}
