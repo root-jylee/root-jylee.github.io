@@ -419,3 +419,5 @@ main .kicker,main .pi-meta h3,main .scope-tech{font-size:var(--fs-label);font-we
 main .scope-card h3.scope-tech,main .contact-card p.contact-role{font-size:var(--fs-label);line-height:1.4}
 main .contact-card p.contact-role{font-size:var(--fs-small)}
 main .pi-card p.pi-role{font-size:var(--fs-body);font-weight:700}
+.cuk-link{padding-right:0;border-right:0;padding-left:22px;border-left:1px solid rgba(11,25,48,.12)}
+@media(max-width:560px){.cuk-link{padding-left:14px}}
