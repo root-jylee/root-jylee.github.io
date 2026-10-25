@@ -395,3 +395,9 @@ html{scroll-padding-top:72px}
 .hero-brand{margin:0 0 12px;line-height:0}
 .hero-brand img{display:block;height:clamp(64px,5.5vw + 36px,112px);width:auto}
 @media(max-width:560px){.hero-cuk{margin-bottom:18px}.hero-cuk img{height:28px}.hero-brand img{height:64px}}
+
+/* Header: CUK signature before the lab brand */
+.brand-group{display:flex;align-items:center;gap:22px;min-width:0}
+.cuk-link{display:flex;align-items:center;padding-right:22px;border-right:1px solid rgba(11,25,48,.12)}
+.cuk-link img{display:block;height:34px;width:auto}
+@media(max-width:560px){.brand-group{gap:14px}.cuk-link{padding-right:14px}.cuk-link img{height:26px}}
