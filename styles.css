@@ -387,3 +387,4 @@ html{scroll-padding-top:72px}
 @media(max-width:560px){.affiliation .wrap{padding:16px 0}.aff-lab img{height:40px}.aff-cuk img{height:34px}}
 .openings-lead,.openings-points li,.openings-col .opening-strip p{font-size:clamp(15px,14px + .2vw,16.5px);line-height:1.8}.openings-points li b{font-size:inherit}.openings-col .section-title{font-size:inherit}.openings-col .section-label-row .section-title{font-size:clamp(28px,24px + 1.2vw,40px)}
 .openings-col .section-label-row .section-title,.openings-col .section-title{font-size:clamp(24px,19px + .9vw,32px)}
+.openings-points li a{color:var(--navy);font-weight:600;text-decoration:underline;text-decoration-color:rgba(20,91,215,.35);text-underline-offset:3px}.openings-points li a:hover{color:var(--blue)}
