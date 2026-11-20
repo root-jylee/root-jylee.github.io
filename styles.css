@@ -458,3 +458,7 @@ main .pi-card p.pi-role{font-size:var(--fs-body);font-weight:700}
 .album-back:hover,.album-back:focus-visible{text-decoration:underline}
 .album-single{max-width:720px;margin:0 auto}
 .album-single .gallery-item img{aspect-ratio:auto}
+.directions{margin-top:30px;max-width:760px}
+.directions h3{margin:0 0 12px;font:600 20px var(--serif);color:var(--navy)}
+.directions p{margin:0 0 9px;color:var(--ink);font-size:var(--fs-small);line-height:1.65}
+.directions b{color:var(--navy)}
