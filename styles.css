@@ -456,3 +456,5 @@ main .pi-card p.pi-role{font-size:var(--fs-body);font-weight:700}
 .album-cover-cap .album-cover-open{margin-top:9px;font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:#9fb6d8}
 .album-back{display:inline-block;margin-bottom:20px;font-size:13px;color:var(--blue);text-decoration:none}
 .album-back:hover,.album-back:focus-visible{text-decoration:underline}
+.album-single{max-width:720px;margin:0 auto}
+.album-single .gallery-item img{aspect-ratio:auto}
